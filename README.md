@@ -1,5 +1,6 @@
-![AYM](aym.png)
-# A&M Todo escolar
+<p align="center">
+  <img src="aym.png" width="300">
+</p># A&M Todo escolar
 **Papelería- librería y bazar**
 
 **👩‍💼 Nombre:** Fernanda Urrutia y Gabriela
@@ -20,4 +21,4 @@
 ## ⚠️Prioridades
 - [ ] Base de datos
 - [ ] Categorizar (de forma general)
-- [ ] 
+
