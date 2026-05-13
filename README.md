@@ -6,7 +6,6 @@
 **Papelería- librería y bazar**
 
 **👩‍💼 Nombre:** Fernanda Urrutia y Gabriela
-
 **🔗 Redes:** Instagram, Whatsapp, Google Maps
 **📌 Ubicación:** Alejandro Flores 3135, 1700000 La Serena, Coquimbo
 **⛔ Problemas:** Inventario, base de datos, Consulta de precio
