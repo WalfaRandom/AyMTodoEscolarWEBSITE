@@ -19,6 +19,7 @@
   - [6. Creando la vista](#6-creando-la-vista)
     - [6.1 Mapa de rutas](#61-mapa-de-rutas)
   - [7. Creación de Categorías](#7-creación-de-categorías)
+  - [8. Creación del Front-End](#8-creación-del-front-end)
 
 
 ---
@@ -49,6 +50,7 @@ Para aprovechar nuestro ORM que nos brinda Django, necesitamos conocer los 4 cam
 
 `BooleanField:` Para Verdadero/Falso.
 
+> Al momento de crear nuestros nuevos campos y asignarlos a las variables, es imperativo saber que estas en las bases de datos no usan camelCase sino que deben usar snake_case para nombrarlas`
 
 ---
 
@@ -253,7 +255,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('productos/', views.listar_productos, name='lista_prods'),
+    path('/productos/', views.listar_productos, name='lista_prods'),
 ]
 ```
 
@@ -317,3 +319,5 @@ class Producto(models.Model):
 `choices`: Crea un menú desplegable en el Panel de Admin. El dueño solo selecciona la opción, evitando errores de tipeo (ej: escribir "Escolares" y otros "Escolar").
 
 `get_categoria_display()`: Es un truco de Django para que en el panel no leamos ESCOLAR, sino el Artículos Escolares.
+
+## 8. Creación del Front-End
