@@ -5,7 +5,7 @@
 # A&M Todo escolar
 **Papelería - Librería y Bazar**
 
-**👩‍💼 Nombre:** Fernanda Urrutia y Gabriela 
+**👩‍💼 Nombre:** Fernanda Urrutia y Gabriela
 **🔗 Redes:** 
 - **Instagram:** &rarr; -📷[@aymtodoescolar](https://www.instagram.com/aymtodoescolar/)
 -  **Whatsapp:** &rarr; 📱+56986716077

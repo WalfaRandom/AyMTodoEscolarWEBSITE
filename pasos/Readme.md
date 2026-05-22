@@ -18,6 +18,7 @@
     - [5.3 Registrar modelo en el panel](#53-registrar-modelo-en-el-panel)
   - [6. Creando la vista](#6-creando-la-vista)
     - [6.1 Mapa de rutas](#61-mapa-de-rutas)
+  - [7. Creación de Categorías](#7-creación-de-categorías)
 
 
 ---
@@ -33,6 +34,21 @@
 
 **MODELADO EN DJANGO**
 En Django, cada modelo es una clase de Python que representa una tabla en la base de datos. Usaremos **models.CharField** para texto y **models.IntegerField** para números.
+
+**ORM (Object Relational Mapping)**
+
+Es una técnica y herramienta de software que nos permite convertir (en este caso) nuestro código python (models.py) en código SQL para que nuestra base de datos la pueda leer correctamente y así, nos envitamos de escribir SQL en nuestro documento. 
+
+**Los cuatro tipos de campos básicos** 
+Para aprovechar nuestro ORM que nos brinda Django, necesitamos conocer los 4 campos de datos más usados:
+`CharField:` Para textos cortos (nombres, marcas). Siempre pide un max_length para saber cuánta memoria reservar en el disco duro.
+
+`TextField:` Para textos largos (descripciones, notas). No tiene límite estricto de caracteres.
+
+`IntegerField:` Para números enteros (precios, stock).
+
+`BooleanField:` Para Verdadero/Falso.
+
 
 ---
 
@@ -269,3 +285,35 @@ Esto es lo primero que revisa Django cuando alguien entra a tu sitio web.
 `path('aym/', include('aym.urls'))`:  Le estamos diciendo al sistema:
 
 Cualquier dirección que empiece con aym/... pásasela al mapa interno de la aplicación aym para que ella decida qué hacer.
+## 7. Creación de Categorías
+
+Como ahora tenemos un aproximado de las cantidades y tipos de productos que trabajan, vamos a crear tres tipos de categorías generales. Para ello vamos a modificar nuestra carpeta `models.py`.
+```python
+from django.db import models
+
+class Producto(models.Model):
+    # Opciones de categorías para el Bazar
+    OPCIONES_CATEGORIA = [
+        ('ESCOLAR', 'Artículos Escolares'),
+        ('REGALO', 'Regalos/Bazar'),
+        ('ALIMENTO', 'Colaciones/Alimentos'),
+    ]
+
+    nombre = models.CharField(max_length=100)
+    descripcion = models.TextField(blank=True, null=True)
+    precio = models.IntegerField()
+    stock = models.IntegerField()
+    
+    # Nuevo campo con opciones predefinidas
+    categoria = models.CharField(
+        max_length=20,
+        choices=OPCIONES_CATEGORIA,
+        default='ESCOLAR'
+    )
+
+    def __str__(self):
+        return f"{self.nombre} ({self.get_categoria_display()})"
+```
+`choices`: Crea un menú desplegable en el Panel de Admin. El dueño solo selecciona la opción, evitando errores de tipeo (ej: escribir "Escolares" y otros "Escolar").
+
+`get_categoria_display()`: Es un truco de Django para que en el panel no leamos ESCOLAR, sino el Artículos Escolares.
