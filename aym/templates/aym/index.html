@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos :D</title>
+</head>
+<body>
+    <h1>Inventario de AYM</h1>
+    <nav>
+    <strong>Filtrar por Categoria</strong>
+    <a href="">Todos</a>
+    <a href="">Utiles Escolares</a>
+    <a href="">Colaciones</a>
+    <a href="">Regalos / Bazar</a>
+
+</nav>
+    <p>Lista de articulos escolares y colaciones en sistema</p>
+
+        <table border="2">
+
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Descripcion</th>
+                <th>Categoria</th>
+            </tr>
+            {% for Producto in lista %}
+
+            <tr>
+                <td>{{ Producto.nombre }}</td>
+                <td>{{ Producto.precio }}</td>
+                <td>{{ Producto.stock }}</td>
+                <td>{{ Producto.descripcion }}</td>
+                <td>{{ Producto.get_categoria_display }}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>
