@@ -19,7 +19,8 @@
   - [6. Creando la vista](#6-creando-la-vista)
     - [6.1 Mapa de rutas](#61-mapa-de-rutas)
   - [7. Creación de Categorías](#7-creación-de-categorías)
-  - [8. Creación del Front-End](#8-creación-del-front-end)
+    - [7.1. Creación del Front-End](#71-creación-del-front-end)
+    - [7.2 Filtrado de datos](#72-filtrado-de-datos)
 
 
 ---
@@ -320,4 +321,115 @@ class Producto(models.Model):
 
 `get_categoria_display()`: Es un truco de Django para que en el panel no leamos ESCOLAR, sino el Artículos Escolares.
 
-## 8. Creación del Front-End
+### 7.1. Creación del Front-End
+Vamos a ir a nuestra carpeta `aym` y allí vamos a crear una subcarpeta llamada `templates`, luego, dentro de esta creamremos otra carpeta llamada igual que nuestra app `aym`, aí creamos el index.html. Les deberá quedar así:
+`aym/templates/aym/index.html`. Allí vamos a escribir la estrucutra de nuestro HTML junto con el **for** para que recorra nuestra tabla **productos**:
+
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid;
+            border-collapse: collapse;            
+            padding: 2px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Inventario de AYM</h1>
+    <p>Lista de artículos escolares y colaciones en sistema:</p>      
+      
+      <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Descripción</th>
+            <th>Categoría</th>
+        </tr>
+        {% for prod in lista %}
+        <tr>
+            <td>{{ prod.nombre }}</td>
+            <td>${{ prod.precio }}   </td>
+            <td>{{ prod.stock }}</td>
+            <td>{{ prod.descripcion }}</td>
+            <td>{{ prod.get_categoria_display }}</td>
+        </tr>
+         {% empty %}
+        <h2>No hay productos Registrados en el inventario</h2>
+        {% endfor %}
+      </table>
+                
+  </body>
+</html>
+```
+Le agregué el signo **$** antes de prod.precio para que se entienda mejor que hablamos de dinero.
+
+**{{ prod.get_categoria_display }}:** En vez de mostrarle al cliente ALIMENTO en mayúsculas, mostrará "**Colaciones/Alimentos**".
+
+**{% empty %}:** Es un salvavidas. Si se borran todos los productos, en vez de quedar la página en blanco, mostrará el mensaje automático de que no hay registros.
+
+### 7.2 Filtrado de datos
+Por el momento funciona todo bien, pero cuando agreguemos los 600 productos va a ser muy díficil buscar los productos entre tantos otros. Lo que vamos a hacer ahora es filtrar datos usando el **ORM** de Django.
+Nosotros actualmente para mostrar los productos en nuestro `views.py` tenemos `Producto.objects.all()`, lo que hace es mostrar todo de la BD, para filtrar los datos vamos a usar la función `filter()`. Para ello vamos a modificar nuestro archivo, nos iremos a `aym/views.py`:
+Si nosotros quisieramos ver solo la catergoría alimento deberíamos hacer esto:
+```bash
+# Le decimos al ORM que solo traiga los productos cuya categoría sea exactamente 'ALIMENTO'
+productos = Producto.objects.filter(categoria='ALIMENTO')
+```
+Si nosotros quisíeramos seleccionar otra categoría diferente tenenos, por el momento, dos opciones:
+
+- Cambiar directamente el tipo de categoría en el archivo views.py
+- Cambiar la categoría desde la URL:
+Para ello podemos enviar instrucciones "ocultas" en la URL usando el símbolo **?**. Por ejemplo:
+`http://127.0.0.1:8000/aym/productos/?cat=ALIMENTO`
+El Backend puede leer lo que viene después de `?cat=` y usar esa palabra para filtrar la base de datos automáticamente.
+
+Para hacer nuestro proyecto dinámico vamos a usar este segundo concepto y lo aplicaremos a nuestro `views.py` y a nuestro `index.html`.
+```python
+def listar_productos(request):
+    # 1. Leemos si el usuario mandó una categoría en la URL (ej: ?cat=REGALO)
+    # Si no mandó nada, la variable quedará vacía (None)
+    cat_seleccionada = request.GET.get('cat')
+    
+    # 2. Lógica de decisión
+    if cat_seleccionada:
+        # Si el usuario eligió una categoría, filtramos por ella
+        productos = Producto.objects.filter(categoria=cat_seleccionada)
+    else:
+        # Si entró a la página normal (sin ?cat=), mostramos TODO el inventario
+        productos = Producto.objects.all()
+
+    # Diccionario de productos
+    contexto={
+        'lista': productos
+    }
+
+    return render(request, 'aym/index.html',contexto)
+```
+Una vez hecho esto podemos modificar los filtros desde la URL para que muestren los productos por categoría. Ejemplo:
+
+http://127.0.0.1:8000/aym/productos/ &rarr; Debería mostrar la tabla completa con todos los productos.
+
+http://127.0.0.1:8000/aym/productos/?cat=ALIMENTO &rarr; Debería mostrar solo los categorizados como alimentos (galletas).
+
+http://127.0.0.1:8000/aym/productos/?cat=ESCOLAR &rarr; Debería mostrar solo los categorizados como escolar (cuaderno).
+Luego de verificar que los productos funcionan correctamente, vamos a modificar nuestro HTML para que filtre mediante un click. Para ello vamos a agregar en nuestro **header** (si tenemos) un nav con las url predeterminadas según el tipo de filtro
+```html
+<nav style="margin-bottom: 20px;">
+    <strong>Filtrar por categoría:</strong>
+    <a href="/aym/productos/">Todos</a> | 
+    <a href="/aym/productos/?cat=ESCOLAR">Útiles Escolares</a> | 
+    <a href="/aym/productos/?cat=ALIMENTO">Colaciones</a> | 
+    <a href="/aym/productos/?cat=REGALO">Regalos/Bazar</a>
+</nav>
+```
+El primer enlace `(/aym/productos/)` no lleva ningún parámetro **?cat=**. Al hacer clic ahí, tu variable categoria_seleccionada en `views.py` será vacía, por lo que el **else** del código se activará y mostrará todo.
+
+Los otros enlaces inyectan la palabra exacta que el **ORM** espera recibir en el filtro ('ESCOLAR', 'ALIMENTO', etc.).
