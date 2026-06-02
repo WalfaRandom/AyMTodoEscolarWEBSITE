@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(114, 114, 114);
+}
+
+
+
+.title {
+    color: rgb(33, 23, 53);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.subtitle {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
