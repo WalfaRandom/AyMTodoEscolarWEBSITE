@@ -23,6 +23,9 @@
     - [7.2 Filtrado de datos](#72-filtrado-de-datos)
     - [7.3 Validador de campos vacíos](#73-validador-de-campos-vacíos)
     - [7.4 Correcciones en model](#74-correcciones-en-model)
+  - [8 Agregar productos desde mi JSON](#8-agregar-productos-desde-mi-json)
+    - [8.1 CRUD](#81-crud)
+    - [8.2 GET vs POST en formularios](#82-get-vs-post-en-formularios)
 
 
 ---
@@ -511,3 +514,84 @@ class Producto(models.Model):
 De acá modificamos:
 - El **import** se agregó el **MinValueValidator**, el cul valida que los datos no puedan ser negativos, evitando asi un problema grande en caso de que alguien intente eliminar de más el stock de x producto.
 - En **descripción, precio y precio_coste** se agregaron los parámetros por defecto de "" y 0, los cuales me permiten, en caso de que luego de improtar nuestros archivos a nuestra bd, si se quiera agregar otros que no poseen todos sus campos completos, estos se rellenen automáticamente sin provocar errores.
+
+## 8 Agregar productos desde mi JSON
+Una vez terminada nuestra bd de prueba lo que debemos hacer es:
+**Primero:** Eliminar los datos anteriores para tener nuestra BD limpia, esto lo haremos con un comando simple pero poderoso: `python manage.py flush`
+
+**Segundo:**  Vamos a crear en nuestra ruta de `aym` una carpeta llamada **fixtures**, allí, vamos a agregar nuestro archivo .JSON con los productos que subiremos, nos deberá quedar algo como esta ruta: `aym/fixtures/productos.json`.
+Luego de agregar nuestro archivo .JSON en esa ruta, vamos a ejecutar el siguiente comando:
+`python manage.py loaddata productos`
+Acá reemplacen el último término por el nombre de su archivo JSON, no es necesario que agreguen la extensión de archivo.
+
+
+**Tercero:** Crear nuestro nuevo superusuario, como lo anterior elimina todos los datos de nuestra BD, nos quedamos sin superusuario para acceder al admin, por lo que debemos crearlo: `python manage.py createsuperuser`
+
+### 8.1 CRUD
+Lo primero que haremos será crear un formulario, para ellos nos iremos a nuestra carpeta raiz, `aym` y crearemos el documento que se llamará `forms.py`.
+**Para construir este formulario, necesitamos importar la biblioteca de formularios de Django (from django import forms) y también el modelo que creamos (from .models import Producto).**
+Este archivo tendrá esto dentro:
+```python
+#/aym/forms.py
+from django import forms
+from .models import Producto
+
+# Creamos un formulario que copia la estructura de nuestro modelo
+class ProductoForm(forms.ModelForm):
+    class Meta:
+        model = Producto
+        # Le decimos a Django qué campos queremos que el usuario pueda rellenar en la web
+        fields = ['nombre', 'descripcion', 'precio', 'precio_coste', 'stock', 'categoria']
+```
+**class Meta**: Es una configuración interna. Le dice a Django que use el modelo Producto como molde para fabricar este formulario".
+
+**fields**: Aquí listamos las columnas que se transformarán en casillas de texto en la pantalla. Django transformará automáticamente el campo categoria en un menú de selección con tus opciones en mayúsculas (ESCOLAR, BAZAR, ALIMENTO).
+
+### 8.2 GET vs POST en formularios
+
+Cuando un usuario interactúa con un formulario, la vista tiene que manejar **dos** situaciones completamente distintas utilizando la misma URL:
+
+Petición **GET** (El usuario entra a la página): El cliente quiere ver el formulario para empezar a escribir. La vista debe crear un formulario totalmente vacío y dibujarlo en la pantalla.
+
+Petición **POST** (El usuario presiona "Guardar"): El cliente envía los datos que digitó de vuelta al servidor. La vista debe atrapar esa información, revisar que cumpla las reglas preventivas y guardarla en la base de datos.
+
+**Vamos a una función dedicada a la creación de productos en `aym/views.py`:**
+
+Para poder usar el formulario y redirigir al usuario una vez que guarde, necesitamos importar ProductoForm desde tu archivo .forms, y también la función redirect desde django.shortcuts.
+```python
+from django.shortcuts import render, redirect # Agregamos redirect aquí
+from .models import Producto
+from .forms import ProductoForm # Importamos tu nuevo formulario
+```
+Al final de `aym/views.py`, vamos a agregar la siguiente función.
+```python
+def crear_producto(request):
+    # 1. Si el usuario presionó el botón de guardar (envió datos)
+    if request.method == 'POST':
+        # Tomamos el formulario e inyectamos los datos que del POST
+        formulario = ProductoForm(request.POST)
+        
+        # Validación automática de Django 
+        if formulario.is_valid():
+            # Si todo está perfecto, el ORM lo guarda directo en la base de datos
+            formulario.save()
+            # Redirigimos al usuario de vuelta al listado de productos para que vea el cambio
+            return redirect('lista_prods')
+            
+    # 2. Si el usuario solo está entrando a la página a mirar (petición GET)
+    else:
+        # Creamos el formulario limpio y vacío
+        formulario = ProductoForm()
+        
+    # Enviamos el formulario (ya sea vacío o con los errores de validación) al HTML
+    contexto = {
+        'form': formulario
+    }
+    return render(request, 'aym/crear.html', contexto)
+```
+**request.POST:** Son los datos que el usuario llenó en el navegador. Al pasársela a ProductoForm(request.POST), Django ingresa cada dato en su casilla correspondiente de manera automática.
+
+**formulario.is_valid():** Esta es una de las funciones más potentes de Django. Analiza si el nombre no está vacío, si los precios son números válidos y ejecuta en segundo plano tu **MinValueValidator(0)** para el stock. Si algo falla (por ejemplo, ponen stock -5), esta función da False, el código salta el guardado y vuelve a renderizar la página mostrando los errores en pantalla de forma automática.
+
+**formulario.save():** El ORM genera el comando INSERT INTO en SQL por debajo y guarda el nuevo artículo en un milisegundo.
+
