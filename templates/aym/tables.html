@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="{% static 'tables.css' %}">
+</head>
+<body>
+    <h1>Productos</h1>
+
+    {% if products %}
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Stock</th>
+                    <th>Precio de Costo</th>
+                    <th>Precio de Venta</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                    <tr>
+                        <td>{{ product.pk }}</td>
+                        <td>{{ product.nombre }}</td>
+                        <td>{{ product.categoria }}</td>
+                        <td>{{ product.stock }}</td>
+                        <td>{{ product.precio_coste }}</td>
+                        <td>{{ product.precio }}</td>
+                        <td>{{ product.descripcion }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No products found.</p>
+    {% endif %}
+</body>
+</html>

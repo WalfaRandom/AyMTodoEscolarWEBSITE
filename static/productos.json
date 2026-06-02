@@ -7,7 +7,7 @@
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1860,
-   "descripcion": "",
+   "descripcion": "Description",
    "precio": 2600
     }
  },
@@ -19,7 +19,7 @@
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 11670,
-   "descripcion": "",
+   "descripcion": "This is a long description",
    "precio": 1400
     }
  },
@@ -31,7 +31,7 @@
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 9010,
-   "descripcion": "",
+   "descripcion": "this is a really long description for a product that will be available to purchase and shit or something i don't know lol",
    "precio": 600
     }
  },
@@ -4587,18 +4587,6 @@
    "model":"aym.producto",
   "pk": 383,
   "fields":{
-   "nombre": "ADHESIVO INSTANTANEO EXTRA FUERTE PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 10,
-   "precio_coste": 400,
-   "descripcion": "",
-   "precio": 0
-    }
- },
- {
-   "model":"aym.producto",
-  "pk": 384,
-  "fields":{
    "nombre": "ADHESIVO MULTIUSO 100CC 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 1,
@@ -4609,7 +4597,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 385,
+  "pk": 384,
   "fields":{
    "nombre": "ALFILERES 50GRS METAL 25MM FULTONS",
    "categoria": "BAZAR",
@@ -4621,7 +4609,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 386,
+  "pk": 385,
   "fields":{
    "nombre": "AMARRAS METALICAS 8CMS COLORES 400 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
@@ -4633,7 +4621,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 387,
+  "pk": 386,
   "fields":{
    "nombre": "ARPILLERA COLOR NATURAL 40X60CMS 1 UNIDAD ART&CRAFT",
    "categoria": "BAZAR",
@@ -4645,7 +4633,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 388,
+  "pk": 387,
   "fields":{
    "nombre": "ARPILLERA ROJA 40X60CM ART&CRAFT",
    "categoria": "BAZAR",
@@ -4657,7 +4645,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 389,
+  "pk": 388,
   "fields":{
    "nombre": "ARPILLERA VERDE 40X60CM ART&CRAFT",
    "categoria": "BAZAR",
@@ -4669,7 +4657,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 390,
+  "pk": 389,
   "fields":{
    "nombre": "BLOCK PARA CROQUIS 16X21CM PROARTE",
    "categoria": "ESCOLAR",
@@ -4681,7 +4669,7 @@
  },
  {
    "model":"aym.producto",
-  "pk": 391,
+  "pk": 390,
   "fields":{
    "nombre": "BLOCK PARA CROQUIS 27X38CM PROARTE",
    "categoria": "ESCOLAR",
@@ -4698,30 +4686,6 @@
    "nombre": "BOLIGRAFO NEGRO LUSSO",
    "categoria": "ESCOLAR",
    "stock": 1,
-   "precio_coste": 2490,
-   "descripcion": "",
-   "precio": 0
-    }
- },
- {
-   "model":"aym.producto",
-  "pk": 393,
-  "fields":{
-   "nombre": "BOLIGRAFO NEGRO LUSSO",
-   "categoria": "ESCOLAR",
-   "stock": 2,
-   "precio_coste": 2450,
-   "descripcion": "",
-   "precio": 0
-    }
- },
- {
-   "model":"aym.producto",
-  "pk": 394,
-  "fields":{
-   "nombre": "BOLIGRAFO NEGRO LUSSO",
-   "categoria": "ESCOLAR",
-   "stock": 2,
    "precio_coste": 2490,
    "descripcion": "",
    "precio": 0
@@ -4777,18 +4741,6 @@
  },
  {
    "model":"aym.producto",
-  "pk": 399,
-  "fields":{
-   "nombre": "CAJA GOMA DE BORRAR MIGA 20 UNIDADES FULTONS",
-   "categoria": "ESCOLAR",
-   "stock": 2,
-   "precio_coste": 7040,
-   "descripcion": "",
-   "precio": 0
-    }
- },
- {
-   "model":"aym.producto",
   "pk": 400,
   "fields":{
    "nombre": "CAJA GOMA DE BORRAR MIGA 20 UNIDADES FULTONS",
@@ -4807,18 +4759,6 @@
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 700,
-   "descripcion": "",
-   "precio": 0
-    }
- },
- {
-   "model":"aym.producto",
-  "pk": 402,
-  "fields":{
-   "nombre": "CARPETA CARTULINA ESPAÑOLA 10 HJS FULTONS",
-   "categoria": "ESCOLAR",
-   "stock": 5,
-   "precio_coste": 1250,
    "descripcion": "",
    "precio": 0
     }
