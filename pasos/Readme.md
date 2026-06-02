@@ -21,6 +21,8 @@
   - [7. Creación de Categorías](#7-creación-de-categorías)
     - [7.1. Creación del Front-End](#71-creación-del-front-end)
     - [7.2 Filtrado de datos](#72-filtrado-de-datos)
+    - [7.3 Validador de campos vacíos](#73-validador-de-campos-vacíos)
+    - [7.4 Correcciones en model](#74-correcciones-en-model)
 
 
 ---
@@ -433,3 +435,79 @@ Luego de verificar que los productos funcionan correctamente, vamos a modificar 
 El primer enlace `(/aym/productos/)` no lleva ningún parámetro **?cat=**. Al hacer clic ahí, tu variable categoria_seleccionada en `views.py` será vacía, por lo que el **else** del código se activará y mostrará todo.
 
 Los otros enlaces inyectan la palabra exacta que el **ORM** espera recibir en el filtro ('ESCOLAR', 'ALIMENTO', etc.).
+
+### 7.3 Validador de campos vacíos
+Para evitar que nuestra página, cuando no hayan productos, nos muestre fondo blanco, vamos a agregar tres validaciones dentro de mi tabla:
+- **Primera validación**:
+Es para cuando el valor del producto no existe o es 0
+```html
+ {% for prod in lista %}
+      <tr>
+        <td>{{ prod.nombre }}</td>
+        <td>
+          {% if prod.precio > 0 %} ${{ prod.precio }} {% else %} No hay precio
+          disponible {% endif %}
+        </td>
+        <td>
+```
+- **Segunda validación:**
+Vamos a validar que si nuestro stock es bajo x cantidad, en este caso es 5:
+```html
+<td>
+          {% if prod.stock <= 5 %}
+          <p style="color: red; font-weight: bold; padding: 0;margin: 0;">
+            {{ prod.stock }} (¡Stock Bajo!)</p>
+          {% else %} {{ prod.stock }} {% endif %}
+        </td>
+```
+- **Tercera validación:**
+Vamos a revisar cuando no hay ningpun producto en nuesta BD.
+```html
+   <td>{{ prod.descripcion }}</td>
+        <td>{{ prod.get_categoria_display }}</td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="5" style="text-align: center; color: red; padding: 10px">
+          <strong>No hay productos registrados en el inventario.</strong>
+        </td>
+      </tr>
+      {% endfor %}
+```
+**Recuerden que estos no son el HTML completo por lo que deben modificar solamente la parte acorde a la validación que se realiza**
+
+### 7.4 Correcciones en model 
+```python
+   from django.db import models
+from django.core.validators import MinValueValidator
+
+# Definimos la estructura de un producto 
+
+class Producto(models.Model):
+    # Opciones de categorías para el Bazar
+    OPCIONES_CATEGORIA = [
+        ('ESCOLAR', 'Artículos Escolares'),
+        ('BAZAR', 'Regalos/Bazar'),
+        ('ALIMENTO', 'Colaciones/Alimentos'),
+    ]
+    nombre = models.CharField(max_length=100)
+    descripcion = models.TextField(blank=True, default="")
+    precio = models.IntegerField(default =0, blank=True)
+    stock = models.IntegerField(validators=[MinValueValidator(0)])
+    # Probando nuevos campos
+    precio_coste = models.IntegerField(default=0, blank=True)
+    
+    # Nuevo campo con opciones predefinidas
+    categoria = models.CharField(
+        max_length=20,
+        choices=OPCIONES_CATEGORIA,
+        default='ESCOLAR'
+    )
+
+
+    def __str__(self):
+        return f"{self.nombre} ({self.get_categoria_display()})"
+```
+De acá modificamos:
+- El **import** se agregó el **MinValueValidator**, el cul valida que los datos no puedan ser negativos, evitando asi un problema grande en caso de que alguien intente eliminar de más el stock de x producto.
+- En **descripción, precio y precio_coste** se agregaron los parámetros por defecto de "" y 0, los cuales me permiten, en caso de que luego de improtar nuestros archivos a nuestra bd, si se quiera agregar otros que no poseen todos sus campos completos, estos se rellenen automáticamente sin provocar errores.
