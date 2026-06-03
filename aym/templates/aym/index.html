@@ -1,0 +1,74 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&M</title>
+    <link rel="stylesheet" href="{% static 'aym/styles.css' %}" />
+  </head>
+  <body>
+    <h1>Inventario A&M</h1>
+
+    <nav>
+      <strong>Filtrar por categoría:</strong>
+      <a href="/aym/productos/">Todos</a> |
+      <a href="/aym/productos/?cat=ESCOLAR">Útiles Escolares</a> |
+      <a href="/aym/productos/?cat=ALIMENTO">Colaciones</a> |
+      <a href="/aym/productos/?cat=BAZAR">Bazar</a> |
+      <a href="{% url 'crear_prod' %}">Crear Producto</a>
+    </nav>
+
+    <!-- <img src="{% static 'aym/nubes.jpg' %}" alt="IMAGEN"> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Descripción</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for prod in lista %}
+        <tr>
+          <td>{{ prod.nombre }}</td>
+          <td>
+            {% if prod.precio > 0 %} ${{ prod.precio }} {% else %} No hay precio
+            disponible {% endif %}
+          </td>
+          <td>
+            {% if prod.stock <= 5 %}
+            <p style="color: red; font-weight: bold; padding: 0; margin: 0">
+              {{ prod.stock }} (¡Stock Bajo!)
+            </p>
+            {% else %} {{ prod.stock }} {% endif %}
+          </td>
+          <td>{{ prod.descripcion }}</td>
+          <td>{{ prod.get_categoria_display }}</td>
+
+          <td>
+            <button class="btnEdi">
+              <a href="{% url 'editar_prod' prod.id %}" class="edi">Editar</a>
+            </button>
+          </td>
+          <td>
+            <button class="btnEli">
+              <a href="{% url 'eliminar_prod' prod.id %}" >Eliminar</a>
+            </button>
+          </td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="6" style="text-align: center; color: red; padding: 10px">
+            <strong>No hay productos registrados en el inventario.</strong>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
