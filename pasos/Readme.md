@@ -29,6 +29,7 @@
     - [9.2 Creación de productos](#92-creación-de-productos)
     - [9.3 Editar productos](#93-editar-productos)
     - [9.4 Eliminar productos](#94-eliminar-productos)
+  - [10. Filtrado de productos](#10-filtrado-de-productos)
 
 
 ---
@@ -736,4 +737,52 @@ Y creamos nuestro archivo `eliminar.html`, cuya función será mostrar el mensaj
     </form>
 </body>
 </html>
+```
+## 10. Filtrado de productos
+
+Lo siguiente a realizar es una búsqueda específica de un producto en concreto. Para ello usaremos `Lookups`, que son operadores de consultas avanzados, específicamente el **__icontains**
+
+- **contains:** Significa "que contenga este texto".
+
+- La **i** al principio significa **Case-Insensitive** (insensible a mayúsculas o minúsculas). Da igual si escribe "ACUARELA", "Acuarela" o "acuarela", el ORM lo encontrará de todas formas.
+
+Para ello, vamos a modificar nuestra función `listar_productos`en `aym/views.py`.
+```python
+def listar_productos(request):
+    # 1. Traemos la consulta base (todos los productos) sin ejecutarla aún en SQL
+    productos = Producto.objects.all()
+    
+    # 2. CAPTURA DE PARÁMETROS DESDE LA URL (request.GET)
+    busqueda = request.GET.get('q', '')         # Texto de la barra de búsqueda
+    categoria = request.GET.get('cat', '')      # Filtro de categoría (el que ya creamos)
+    ordenar_por = request.GET.get('order', '')  # Criterio de ordenamiento (precio, nombre)
+
+    # 3. APLICACIÓN DE FILTROS (Se van acumulando de forma inteligente)
+    
+    # Si el usuario escribió algo en la barra de búsqueda
+    if busqueda:
+        productos = productos.filter(nombre__icontains=busqueda)
+        
+    # Si el usuario seleccionó una categoría en la botonera
+    if categoria:
+        productos = productos.filter(categoria=categoria)
+        
+    # 4. APLICACIÓN DE ORDENAMIENTO (order_by)
+    if ordenar_por == 'precio_asc':
+        productos = productos.order_by('precio')       # Menor a Mayor
+    elif ordenar_por == 'precio_desc':
+        productos = productos.order_by('-precio')      # Mayor a Menor (el signo '-' invierte)
+    elif ordenar_por == 'nombre_az':
+        productos = productos.order_by('nombre')       # A - Z
+    elif ordenar_por == 'nombre_za':
+        productos = productos.order_by('-nombre')      # Z - A
+
+    # 5. EMPAQUETADO PARA EL TEMPLATE
+    contexto = {
+        'lista': productos,
+        'busqueda_actual': busqueda, # Mantenemos el texto en la casilla para comodidad del usuario
+        'categoria_actual': categoria,
+        'orden_actual': ordenar_por
+    }
+    return render(request, 'aym/index.html', contexto)
 ```
