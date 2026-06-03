@@ -11,6 +11,7 @@ class Producto(models.Model):
     descripcion = models.TextField(blank=True, null=True)
     precio = models.IntegerField(null=True, blank=True)
     stock = models.IntegerField()
+    precio_coste = models.IntegerField(default=0, blank=True)
     categoria = models.CharField(
         max_length=20,
         choices=OPCIONES_CATEGORIA,

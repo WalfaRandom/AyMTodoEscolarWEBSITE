@@ -1,18 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos :D</title>
+    <link rel="stylesheet" href="{% static 'aym/styles.css' %}">
 </head>
 <body>
     <h1>Inventario de AYM</h1>
     <nav>
     <strong>Filtrar por Categoria</strong>
-    <a href="">Todos</a>
-    <a href="">Utiles Escolares</a>
-    <a href="">Colaciones</a>
-    <a href="">Regalos / Bazar</a>
+    <a href="/aym/productos/">Todos</a>
+    <a href="/aym/productos/?cat=ESCOLAR">Utiles Escolares</a>
+    <a href="/aym/productos/?cat=ALIMENTO">Colaciones</a>
+    <a href="/aym/productos/?cat=BAZAR">Regalos / Bazar</a>
 
 </nav>
     <p>Lista de articulos escolares y colaciones en sistema</p>
@@ -29,9 +32,31 @@
             {% for Producto in lista %}
 
             <tr>
+
+                
                 <td>{{ Producto.nombre }}</td>
-                <td>{{ Producto.precio }}</td>
-                <td>{{ Producto.stock }}</td>
+                
+                
+                <td>
+                    {% if Producto.precio > 0 %}    
+                        ${{ Producto.precio }} 
+                    {% else %} 
+                    No hay precio disponible 
+                    {% endif %} 
+        
+                </td>
+                <td>
+                    
+                    {% if Producto.stock >= 5 %}
+                        {{ Producto.stock }}
+                    
+                        {% else %}
+                    
+                    <p style="color: red; margin: 0; padding: 0; "> ¡ {{ Producto.stock }} ! </p> 
+                    
+                    {% endif %}
+                
+                </td>
                 <td>{{ Producto.descripcion }}</td>
                 <td>{{ Producto.get_categoria_display }}</td>
 
