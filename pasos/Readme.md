@@ -23,9 +23,12 @@
     - [7.2 Filtrado de datos](#72-filtrado-de-datos)
     - [7.3 Validador de campos vacíos](#73-validador-de-campos-vacíos)
     - [7.4 Correcciones en model](#74-correcciones-en-model)
-  - [8 Agregar productos desde mi JSON](#8-agregar-productos-desde-mi-json)
-    - [8.1 CRUD](#81-crud)
-    - [8.2 GET vs POST en formularios](#82-get-vs-post-en-formularios)
+  - [8. Agregar productos desde mi JSON](#8-agregar-productos-desde-mi-json)
+  - [9 CRUD](#9-crud)
+    - [9.1 GET vs POST en formularios](#91-get-vs-post-en-formularios)
+    - [9.2 Creación de productos](#92-creación-de-productos)
+    - [9.3 Editar productos](#93-editar-productos)
+    - [9.4 Eliminar productos](#94-eliminar-productos)
 
 
 ---
@@ -512,10 +515,10 @@ class Producto(models.Model):
         return f"{self.nombre} ({self.get_categoria_display()})"
 ```
 De acá modificamos:
-- El **import** se agregó el **MinValueValidator**, el cul valida que los datos no puedan ser negativos, evitando asi un problema grande en caso de que alguien intente eliminar de más el stock de x producto.
+- El **import** se agregó el **MinValueValidator**, el cual valida que los datos no puedan ser negativos, evitando asi un problema grande en caso de que alguien intente eliminar de más el stock de x producto.
 - En **descripción, precio y precio_coste** se agregaron los parámetros por defecto de "" y 0, los cuales me permiten, en caso de que luego de improtar nuestros archivos a nuestra bd, si se quiera agregar otros que no poseen todos sus campos completos, estos se rellenen automáticamente sin provocar errores.
 
-## 8 Agregar productos desde mi JSON
+## 8. Agregar productos desde mi JSON
 Una vez terminada nuestra bd de prueba lo que debemos hacer es:
 **Primero:** Eliminar los datos anteriores para tener nuestra BD limpia, esto lo haremos con un comando simple pero poderoso: `python manage.py flush`
 
@@ -527,7 +530,7 @@ Acá reemplacen el último término por el nombre de su archivo JSON, no es nece
 
 **Tercero:** Crear nuestro nuevo superusuario, como lo anterior elimina todos los datos de nuestra BD, nos quedamos sin superusuario para acceder al admin, por lo que debemos crearlo: `python manage.py createsuperuser`
 
-### 8.1 CRUD
+## 9 CRUD
 Lo primero que haremos será crear un formulario, para ellos nos iremos a nuestra carpeta raiz, `aym` y crearemos el documento que se llamará `forms.py`.
 **Para construir este formulario, necesitamos importar la biblioteca de formularios de Django (from django import forms) y también el modelo que creamos (from .models import Producto).**
 Este archivo tendrá esto dentro:
@@ -547,13 +550,16 @@ class ProductoForm(forms.ModelForm):
 
 **fields**: Aquí listamos las columnas que se transformarán en casillas de texto en la pantalla. Django transformará automáticamente el campo categoria en un menú de selección con tus opciones en mayúsculas (ESCOLAR, BAZAR, ALIMENTO).
 
-### 8.2 GET vs POST en formularios
+### 9.1 GET vs POST en formularios
 
 Cuando un usuario interactúa con un formulario, la vista tiene que manejar **dos** situaciones completamente distintas utilizando la misma URL:
 
 Petición **GET** (El usuario entra a la página): El cliente quiere ver el formulario para empezar a escribir. La vista debe crear un formulario totalmente vacío y dibujarlo en la pantalla.
 
 Petición **POST** (El usuario presiona "Guardar"): El cliente envía los datos que digitó de vuelta al servidor. La vista debe atrapar esa información, revisar que cumpla las reglas preventivas y guardarla en la base de datos.
+
+### 9.2 Creación de productos
+Es importante mencionar que son muy similares las formas de hacer el CRUD, por lo que si entienden una van a comprender la demás de mejor manera
 
 **Vamos a una función dedicada a la creación de productos en `aym/views.py`:**
 
@@ -595,3 +601,139 @@ def crear_producto(request):
 
 **formulario.save():** El ORM genera el comando INSERT INTO en SQL por debajo y guarda el nuevo artículo en un milisegundo.
 
+Ahora vamos a conectar la ruta en la  URLs, para ello debemos asignarle una dirección clara, para ello nos iremos a `aym/urls.py` y dentro de nuestro `urlpatterns`, agregaremos los siguiente:
+```python
+path('productos/nuevo/', views.crear_producto, name='crear_prod'),
+```
+
+Luego de agregar la URL, como pueden ver en la ultima línea  de nuestro `views.py` dice que esto estará en el archivo `crear.html`, el cual aun no hemos creado y es lo siguiente que haremos. Vamos a crear este archivo en la misma carpeta que index.html `aym/templates/aym/crear.html`:
+
+```html
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AyM - Añadir Producto</title>
+  </head>
+  <body>
+    <h1>Registrar Nuevo Artículo</h1>
+    <p>Complete los datos para incorporar el producto al inventario oficial:</p>
+
+    <form method="POST">
+      {% csrf_token %}
+
+      <table>
+        {{ form.as_table }}
+      </table>
+
+      <br />
+      <button type="submit">Guardar Producto en Bodega</button>
+    </form>
+
+    <br />
+    <a href="{% url 'lista_prods' %}">Volver al Inventario Total</a>
+  </body>
+</html>
+```
+**method="POST":** Le dice al navegador que cuando el usuario presione el botón, empaquete los datos de forma segura dentro del cuerpo de la petición HTTP (request.POST) y no a través de la URL.
+
+**{% csrf_token %}:** ¡Esto es obligación en Django! Es una directiva de seguridad que inyecta un código secreto invisible y único. Evita un tipo de ataque hacker llamado Cross-Site Request Forgery (Falsificación de Petición en Sitios Cruzados), donde un sitio malicioso intenta enviar datos a tu base de datos haciéndose pasar por el dueño. Si no ponemos esta línea, Django bloqueará el guardado por seguridad y lanzará un error 403 Forbidden.
+
+**{{ form.as_table }}:** Aquí ocurre la magia frontend de Django. En lugar de escribir seis etiquetas `<label>` y seis ``<input>``, Django lee tu forms.py y dibuja automáticamente las filas de la tabla con los cuadros de texto correspondientes, incluyendo los mensajes en rojo si hay errores de validación.
+
+### 9.3 Editar productos
+Este en general es igual al anterior pero primero es imporante aclarar que cuando creamos un producto, el form aparece vacío, pero al editar un artículo este debe tener sus datos correspondientes.
+
+- Necesita saber qué producto se quiere editar (pasando el ID por la URL)
+- Necesita además ingresar a la BD, buscar el producto y cargar sus datos
+
+Primero nos iremos a nuestro `views.py`, en donde vamos a crear otra función que permita editar el producto:
+
+```python
+def editar_producto(request, id):
+    producto = Producto.objects.get(id=id)
+    #POST
+    if request.method == 'POST':
+        formulario = ProductoForm(request.POST, instance=producto)
+        if formulario.is_valid():
+            formulario.save()
+            return redirect('lista_prods')
+    #GET
+    else:
+        formulario = ProductoForm(instance=producto)
+        # Empaquetar y renderizar
+    contexto = {
+        'form': formulario,
+        'producto': producto # nos sirve si queremos mostrar el nombre original en el HTML
+    }
+    return render(request, 'aym/editar.html', contexto)    
+```
+Luego, igual que cuando creamos un producto, vamos a crear su URL pero esta será **dinámica**. Esto porque Django necesita recibir el ID del producto que se va a editar (por ejemplo: `/productos/editar/1/`, `/productos/editar/2/`, etc.).
+
+Entonces nuestro archivo `aym/urls.py`nos deberá quedar asi:
+```python
+path('productos/editar/<int:id>/', views.editar_producto, name='editar_prod'),
+```
+`<int:id>` **le dice a Django**: "Cualquier número entero que el usuario ponga en esta parte de la barra de direcciones, atrápalo y pásaselo automáticamente como el argumento llamado id a la función editar_producto en las vistas".
+
+Posterior a eso, vamos a crear nuestra vista de editar, en la misma carpeta donde tenemos los html crearemos nuestro `editar.html`, el cuál va a ser idéntico a nuestro `crear.html`.
+
+Después vamos a modificar nuestra tabla (donde se muestran todos los productos). Vamos a crear una columna nueva, pondremos **Acciones** de encabezado y como cuerpo va a ser un botón que me direccione a la URL de la edición:
+**Como hemos modificado la cantidad de elementos que posee mi tabla deberemos cambiar, a 6, el colspan que ingresamos antes**
+```html
+ {% empty %}
+      <tr>
+        <td colspan="6" style="text-align: center; color: red; padding: 10px">
+          <strong>No hay productos registrados en el inventario.</strong>
+```
+
+```html
+    <td>{{ prod.descripcion }}</td>
+    <td>{{ prod.get_categoria_display }}</td>
+    <td>
+        <button>
+            <a href="{% url 'editar_prod' prod.id %}">Editar</a>
+            <!-- Esta es la forma de pasarle el ID del producto seleccionado de forma dinámica a la URL -->
+        </button>      
+    </td>
+``` 
+
+### 9.4 Eliminar productos
+Al igual que los anteriores, esta función también necesita recibir el id del producto.
+
+- Si el método es POST (el usuario confirmó que quiere borrar), usamos el método .delete() del ORM y redirigimos.
+
+- Si el método es GET, simplemente le mostramos una página de advertencia preguntándole: ¿Está seguro de eliminar este producto?
+
+Vamos a crear nuesta función en `views.py`:
+```python
+def eliminar_producto(request, id):
+    producto = Producto.objects.get(id=id)
+    
+    if request.method == 'POST':
+        # El ORM borra el registro de la base de datos de forma definitiva
+        producto.delete()
+        return redirect('lista_prods')
+        
+    return render(request, 'aym/eliminar.html', {'producto': producto})
+```
+Luego creamos la URL en nuestro `urls.py`:
+```python
+path('productos/eliminar/<int:id>/', views.eliminar_producto, name='eliminar_prod'),
+```
+Y creamos nuestro archivo `eliminar.html`, cuya función será mostrar el mensaje de confirmación de la eliminación del producto:
+```html
+<html lang="es">
+<head><title>Eliminar Producto</title></head>
+<body>
+    <h1>¿Está seguro de eliminar el producto: "{{ producto.nombre }}"?</h1>
+    <p style="color: red;">Esta acción es irreversible y removerá el artículo de la bodega.</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" style="background-color: red; color: white;">Sí, Confirmar Eliminación</button>
+        <a href="{% url 'lista_prods' %}">Cancelar y Volver</a>
+    </form>
+</body>
+</html>
+```
