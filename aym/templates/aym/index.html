@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Geologica:wght,CRSV@100..900,0&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Inventario A&M</h1>
+    <div class="headerCont">
+    <header>
+    <img src="{% static 'aym/A&M.png' %}" alt="LOGO" width="250px">
+      <h1>Inventario A&M</h1>
 
     <nav>
       <strong>Filtrar por categoría:</strong>
@@ -23,6 +26,7 @@
       <a href="{% url 'crear_prod' %}">Crear Producto</a>
     </nav>
     <form method="GET" class="busqueda">
+    
     {% if categoria_actual %}
         <input type="hidden" name="cat" value="{{ categoria_actual }}">
     {% endif %}
@@ -39,13 +43,14 @@
     <a href="?order=precio_asc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Menor a Mayor</a> | 
     <a href="?order=precio_desc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Mayor a Menor</a>
     </div>
+    </header>
+    </div>
     <table>
       <thead>
         <tr>
           <th>Nombre</th>
           <th>Precio</th>
           <th>Stock</th>
-          <th>Descripción</th>
           <th>Categoría</th>
           <th>Editar</th>
           <th>Eliminar</th>
@@ -66,7 +71,6 @@
             </p>
             {% else %} {{ prod.stock }} {% endif %}
           </td>
-          <td>{{ prod.descripcion }}</td>
           <td>{{ prod.get_categoria_display }}</td>
 
           <td>

@@ -1,12 +1,25 @@
 body{
   font-family: "Quantico";
+  background-image: url(nubes.jpg);
 }
-
+img
+{
+position:absolute;
+left:50px;
+top:-35px;
+z-index:1; 
+}
 h1 {
   text-align: center;
   font-size: 57px; 
 }
-
+section img{
+  width: 250px;
+}
+section{
+  border: 1px solid;
+  width: fit-content;
+}
 nav {
   text-align: center;
 }
@@ -29,8 +42,9 @@ nav a{
 }
 .filtro{
   margin-left: 10px;
-  color: gray;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+
 }
 .orden{
   margin-bottom: 20px;
@@ -51,6 +65,7 @@ nav a{
 
 table {
   margin: auto;
+  background-color: rgb(255, 255, 255);
 }
 table caption {
   font-size: 30px;
@@ -61,7 +76,6 @@ table,th,tr,td {
   border: 1px solid;
   border-collapse: collapse;
   padding: 2px;
-  margin-top: 20px;
 }
 .bajoSto{
   color: red;

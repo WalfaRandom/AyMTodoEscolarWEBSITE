@@ -7,4 +7,4 @@ class ProductoForm(forms.ModelForm):
     class Meta:
         model = Producto
         # Le decimos a Django qué campos queremos que el usuario pueda rellenar en la web
-        fields = ['nombre', 'descripcion', 'precio', 'precio_coste', 'stock', 'categoria']
+        fields = ['nombre','precio', 'precio_coste', 'stock', 'categoria']
