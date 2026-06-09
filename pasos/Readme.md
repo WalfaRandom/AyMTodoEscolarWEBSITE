@@ -35,7 +35,7 @@
 ---
 
 ## 0. Conceptos a conocer
-**MVT (Modelo - Vista - Template)**
+**MVT (Modelo - Vista - Template)**kv
 
 - **Modelo (M):** La estructura de la Bodega. Cómo se guarda un lápiz o un cuaderno en la base de datos.  
 
@@ -642,6 +642,13 @@ Luego de agregar la URL, como pueden ver en la ultima línea  de nuestro `views.
 
 **{{ form.as_table }}:** Aquí ocurre la magia frontend de Django. En lugar de escribir seis etiquetas `<label>` y seis ``<input>``, Django lee tu forms.py y dibuja automáticamente las filas de la tabla con los cuadros de texto correspondientes, incluyendo los mensajes en rojo si hay errores de validación.
 
+Finalmente, nuestro `index.html` nos debe quedar, en nuestro nav, algo como esto:
+```html
+ <strong>CRUD:</strong>
+      <a href="{% url 'crear_prod' %}">Agregar Producto</a>
+      
+```
+
 ### 9.3 Editar productos
 Este en general es igual al anterior pero primero es imporante aclarar que cuando creamos un producto, el form aparece vacío, pero al editar un artículo este debe tener sus datos correspondientes.
 
@@ -786,3 +793,10 @@ def listar_productos(request):
     }
     return render(request, 'aym/index.html', contexto)
 ```
+**Explicación:**
+```python
+busqueda = request.GET.get('q', '')         
+categoria = request.GET.get('cat', '')      
+ordenar_por = request.GET.get('order', '')
+```
+acá lo que hacemos es guardar cada tipo de filtro, `busqueda, categoría y ordenar` y en las variables `q, cat y order` respectivamente
