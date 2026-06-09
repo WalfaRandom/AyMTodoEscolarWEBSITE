@@ -1,16 +1,54 @@
-/* body{
-  background-image: url(nubes.jpg);
-} */
+body{
+  font-family: "Quantico";
+}
 
 h1 {
   text-align: center;
+  font-size: 57px; 
 }
-.noProd{
-    text-align: center;
-}
+
 nav {
   text-align: center;
 }
+nav a{
+  text-decoration: none;
+} 
+.busqueda{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.buscar{
+  padding: 6px;
+  width: 300px;
+  border-radius: 150px;
+}
+.btnBus{
+  padding: 6px 12px;
+  border-radius: 15px;
+}
+.filtro{
+  margin-left: 10px;
+  color: gray;
+  text-decoration: none;
+}
+.orden{
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.orden a:hover{
+  background-color: rgb(198, 198, 198);
+  transition: 0.5s;
+}
+.orden a{
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  color: black;
+}
+
 table {
   margin: auto;
 }
@@ -25,15 +63,35 @@ table,th,tr,td {
   padding: 2px;
   margin-top: 20px;
 }
+.bajoSto{
+  color: red;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
 p {
   border: 1px solid;
   border-collapse: collapse;
   padding: 2px;
 }
+.noProd{
+  text-align: center;
+  color: red;
+  padding: 10px;
+}
 
+.btnEdi{
+  border-radius: 20px;
+  border: 1px solid black;
+}
 .btnEdi a{
   text-decoration: none;
   color: rgb(67, 0, 71);
+}
+
+.btnEli{
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 .btnEli a{

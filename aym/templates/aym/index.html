@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A&M</title>
     <link rel="stylesheet" href="{% static 'aym/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Geologica:wght,CRSV@100..900,0&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Inventario A&M</h1>
@@ -19,8 +22,23 @@
       <a href="/aym/productos/?cat=BAZAR">Bazar</a> |
       <a href="{% url 'crear_prod' %}">Crear Producto</a>
     </nav>
+    <form method="GET" class="busqueda">
+    {% if categoria_actual %}
+        <input type="hidden" name="cat" value="{{ categoria_actual }}">
+    {% endif %}
 
-    <!-- <img src="{% static 'aym/nubes.jpg' %}" alt="IMAGEN"> -->
+    <input type="text" name="q" class="buscar" value="{{ busqueda_actual }}" placeholder="Buscar producto por nombre...">
+    <button type="submit" class="btnBus">Buscar</button>
+    
+    <a href="{% url 'lista_prods' %}" class="filtro">Limpiar Filtros</a>
+    </form>
+    <div class="orden">
+    <strong>Ordenar por:</strong>
+    <a href="?order=nombre_az{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (A-Z)</a> | 
+    <a href="?order=nombre_za{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (Z-A)</a> | 
+    <a href="?order=precio_asc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Menor a Mayor</a> | 
+    <a href="?order=precio_desc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Mayor a Menor</a>
+    </div>
     <table>
       <thead>
         <tr>
@@ -29,7 +47,8 @@
           <th>Stock</th>
           <th>Descripción</th>
           <th>Categoría</th>
-          <th>Acciones</th>
+          <th>Editar</th>
+          <th>Eliminar</th>
         </tr>
       </thead>
       <tbody>
@@ -42,7 +61,7 @@
           </td>
           <td>
             {% if prod.stock <= 5 %}
-            <p style="color: red; font-weight: bold; padding: 0; margin: 0">
+            <p class="bajoSto">
               {{ prod.stock }} (¡Stock Bajo!)
             </p>
             {% else %} {{ prod.stock }} {% endif %}
@@ -52,18 +71,18 @@
 
           <td>
             <button class="btnEdi">
-              <a href="{% url 'editar_prod' prod.id %}" class="edi">Editar</a>
+              <a href="{% url 'editar_prod' prod.id %}" >Editar</a>
             </button>
           </td>
           <td>
             <button class="btnEli">
-              <a href="{% url 'eliminar_prod' prod.id %}" >Eliminar</a>
+              <a href="{% url 'eliminar_prod' prod.id %}">Eliminar</a>
             </button>
           </td>
         </tr>
         {% empty %}
         <tr>
-          <td colspan="6" style="text-align: center; color: red; padding: 10px">
+          <td class="noProd" colspan="6">
             <strong>No hay productos registrados en el inventario.</strong>
           </td>
         </tr>
