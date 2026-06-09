@@ -756,7 +756,8 @@ Lo siguiente a realizar es una búsqueda específica de un producto en concreto.
 Para ello, vamos a modificar nuestra función `listar_productos`en `aym/views.py`.
 ```python
 def listar_productos(request):
-    # 1. Traemos la consulta base (todos los productos) sin ejecutarla aún en SQL
+    # 1. Traemos la consulta base sin ejecutar
+    #Lo que hace Django acá no es leer los 600 productos, sino que apunta solamente al contenedor de productos
     productos = Producto.objects.all()
     
     # 2. CAPTURA DE PARÁMETROS DESDE LA URL (request.GET)
@@ -764,21 +765,43 @@ def listar_productos(request):
     categoria = request.GET.get('cat', '')      # Filtro de categoría (el que ya creamos)
     ordenar_por = request.GET.get('order', '')  # Criterio de ordenamiento (precio, nombre)
 
+    """ 
+    El asistente mira la URL del navegador (request) para ver si el usuario escribió algo en la barra de búsqueda ('q'), si presionó un botón de categoría ('cat'), o si hizo clic en ordenar ('order').
+    Si no hay nada, estas variables quedan vacías (''). 
+    """
+
+
     # 3. APLICACIÓN DE FILTROS (Se van acumulando de forma inteligente)
     
     # Si el usuario escribió algo en la barra de búsqueda
     if busqueda:
         productos = productos.filter(nombre__icontains=busqueda)
         
+    """ 
+    Si el usuario escribió "Acuarela", el asistente busca en la caja de productos y saca solo los que contienen la palabra "acuarela" (sin importar mayúsculas o minúsculas por el __icontains), y descarta el resto. Ahora la caja quizás tiene solo 5 productos.
+    """
+
     # Si el usuario seleccionó una categoría en la botonera
     if categoria:
         productos = productos.filter(categoria=categoria)
         
+    """ 
+    Si además el usuario tenía seleccionada la categoría "ESCOLAR", el asistente toma esos 5 productos que sobrevivieron al primer filtro y les aplica un segundo embudo. Si de las 5 acuarelas una era de "BAZAR", la quita. Los filtros se acumulan de forma inteligente.
+    """
+
     # 4. APLICACIÓN DE ORDENAMIENTO (order_by)
     if ordenar_por == 'precio_asc':
         productos = productos.order_by('precio')       # Menor a Mayor
     elif ordenar_por == 'precio_desc':
         productos = productos.order_by('-precio')      # Mayor a Menor (el signo '-' invierte)
+
+    """ 
+    Una vez que el asistente tiene el grupo final de productos filtrados revisa si pediste ordenarlos.
+
+    Si detecta 'precio_desc', el asistente reordena las fichas dejando las más caras arriba. El signo - en '-precio' es el forma técnica para decirle a la base de datos que ordene al revés (de mayor a menor).
+    """
+
+    
     elif ordenar_por == 'nombre_az':
         productos = productos.order_by('nombre')       # A - Z
     elif ordenar_por == 'nombre_za':
@@ -793,10 +816,71 @@ def listar_productos(request):
     }
     return render(request, 'aym/index.html', contexto)
 ```
-**Explicación:**
-```python
-busqueda = request.GET.get('q', '')         
-categoria = request.GET.get('cat', '')      
-ordenar_por = request.GET.get('order', '')
+**IMPORTANTE:**
 ```
-acá lo que hacemos es guardar cada tipo de filtro, `busqueda, categoría y ordenar` y en las variables `q, cat y order` respectivamente
+BORREN LOS COMENTARIOS QUE ESTÁN DENTRO DE LOS ELIF, YA QUE DARÁN ERORRES
+```
+
+Luego de realizar y comprender la creación de los distintos filtros, vamos a crear el formulario que conectaremos a nuestro filtro **(q)**:
+Esto lo ideal es que vaya (en nuestro `index.html`) debajo de nuestro nav, pero es sólo una sugerencia
+```html
+<form method="GET" style="margin-bottom: 20px;">
+    {% if categoria_actual %}
+        <input type="hidden" name="cat" value="{{ categoria_actual }}">
+    {% endif %}
+
+    <input type="text" name="q" value="{{ busqueda_actual }}" placeholder="Buscar producto por nombre..." style="padding: 6px; width: 300px;">
+    <button type="submit" style="padding: 6px 12px;">Buscar</button>
+    
+    <a href="{% url 'lista_prods' %}" style="margin-left: 10px; color: gray; text-decoration: none;">Limpiar Filtros</a>
+</form>
+```
+
+Para finalizar, vamos a crear los enlaces que van a permitir filtrar nuestro datos dependiendo de lo que queramos **(order)**
+Seguimos en `index.html`:
+```html
+<div style="margin-bottom: 20px; font-size: 14px;">
+    <strong>Ordenar por:</strong>
+    <a href="?order=nombre_az{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (A-Z)</a> | 
+    <a href="?order=nombre_za{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (Z-A)</a> | 
+    <a href="?order=precio_asc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Menor a Mayor</a> | 
+    <a href="?order=precio_desc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Mayor a Menor</a>
+</div>
+```
+**Explicaicón:**
+ <h3>**⚠️Advertencia de mucho texto ⚠️**</h3> 
+
+Supongamos que el usuario escribe "Acuarela" en el buscador. El sistema recarga la página y le muestra las x acuarelas que encontró en las 600 filas del inventario.
+
+Ahora, si quiere ordenar esas acuarelas de Menor a Mayor Precio y hace clic en un enlace simple que solo diga: href="?order=precio_asc".
+
+La URL del navegador cambiaría por completo a ?order=precio_asc, el servidor olvidaría que el usuario estaba buscando "Acuarela" y le mostraría todo el inventario de 600 productos ordenados por precio. 
+**Para solucionar esto, usamos los enlaces acumulativos.**
+
+El truco de está en cómo Django construye la **dirección** del enlace (href="...") en tiempo real uniendo **tres** piezas para ellos vamos a analizar el tercer enlace:
+```html
+  <a href="?order=precio_asc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Menor a Mayor</a> |  
+```
+
+**Pieza 1:** La orden principal `(?order=precio_asc)`
+Esta es la base fija del enlace. Le avisa a la vista: "Quiero activar el ordenamiento de menor a mayor precio". El signo ? inicia los parámetros en la URL.
+
+**Pieza 2:** La barra de búsqueda
+`{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}`
+Django revisa si el usuario ya tenía algo escrito en la casilla de búsqueda (gracias a la variable **busqueda_actual**).
+
+Si el usuario tenía escrita la palabra **Acuarela**, Django inyecta en el enlace la continuación: **&q=Acuarela**. El signo & sirve para encadenar un segundo parámetro en la URL. Si la casilla estaba vacía, esta línea no escribe absolutamente nada.
+
+**Pieza 3:** Las categorías
+`{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}`
+Esto es exactamente igual al anterior. Django revisa si el usuario tenía presionada alguna categoría (como ESCOLAR).
+
+Si es así, anexa al final del enlace: &cat=ESCOLAR.
+
+**El Resultado Final en el Navegador:**
+Gracias a este diseño de código, si el usuario busca **Acuarela**, selecciona la categoría "ESCOLAR" y luego hace clic en "Precio: Menor a Mayor", Django unirá las tres piezas y generará de forma automática este enlace perfecto:
+
+`href="?order=precio_asc&q=Acuarela&cat=ESCOLAR"`
+
+Al hacer clic, la URL le envía los tres datos al mismo tiempo a la vista **listar_productos**. El "Motor" recibe el paquete completo y es capaz de usar los datos en los tres filtros: por texto, por categoría y ordena el resultado sin perder ninguna instrucción en el camino.
+
