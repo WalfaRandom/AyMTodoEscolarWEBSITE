@@ -1,7178 +1,7178 @@
 [
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 1,
-  "fields": {
+  "fields":{
    "nombre": "ACUARELA 12 COLORES EN CAJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1860,
    "descripcion": "Description",
    "precio": 2600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 2,
-  "fields": {
+  "fields":{
    "nombre": "ADHESIVO MULTIUSO 100CC 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 11670,
    "descripcion": "This is a long description",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 3,
-  "fields": {
+  "fields":{
    "nombre": "ADHESIVO MULTIUSO 30CC 24 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 9010,
    "descripcion": "this is a really long description for a product that will be available to purchase and shit or something i don't know lol",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 4,
-  "fields": {
+  "fields":{
    "nombre": "AGUJAS METALICAS PARA LANA 6CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 12,
    "precio_coste": 580,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 5,
-  "fields": {
+  "fields":{
    "nombre": "AGUJAS PLASTICAS PARA LANA 7CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 12,
    "precio_coste": 580,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 6,
-  "fields": {
+  "fields":{
    "nombre": "APRETADOR 25MM 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 610,
    "descripcion": "",
    "precio": 100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 7,
-  "fields": {
+  "fields":{
    "nombre": "APRETADOR 41MM 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 8,
-  "fields": {
+  "fields":{
    "nombre": "ARCHIVADOR OFICIO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1470,
    "descripcion": "",
    "precio": 2500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 9,
-  "fields": {
+  "fields":{
    "nombre": "ARCILLA 1 KILO APROX USO ESCOLAR Y PROFESIONAL",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 10,
-  "fields": {
+  "fields":{
    "nombre": "BARRAS SILICONA BOLSA DE 10",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 690,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 11,
-  "fields": {
+  "fields":{
    "nombre": "BILLETES Y MONEDAS DE CHILE ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 400,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 12,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK CARTULINA DE COLOR",
    "categoria": "ESCOLAR",
    "stock": 9,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 13,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK CARTULINA DE METAL",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 14,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK CARTULINA ESPAÑOLA",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 15,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK DE PAPEL CELOFAN",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1529,
    "descripcion": "",
    "precio": 2200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 16,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK DIBUJO 99",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 990,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 17,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK LICEO 20 HOJAS PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 760,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 18,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK MILIMETRADO 50 HOJAS PROARTE",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 1720,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 19,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PAÑOLENCI",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 20,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PAPEL DE DIAMANTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 21,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PAPEL ENTRETENIDO",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 990,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 22,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PAPEL LUSTRE",
    "categoria": "ESCOLAR",
    "stock": 7,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 23,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PAPEL LUSTRE TORRE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1540,
    "descripcion": "",
    "precio": 2200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 24,
-  "fields": {
+  "fields":{
    "nombre": "BOLSAS ESCARCHA ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 25,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS CON LENTEJUELAS COLORES ESPECIALES",
    "categoria": "BAZAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 26,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS CON MOSTACILLLAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 27,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS CONFETI ART & CRAFT",
    "categoria": "ESCOLAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 28,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS ESCARCHA COLORES ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 29,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS ESTRELLA Y LENTEJUELAS ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 30,
-  "fields": {
+  "fields":{
    "nombre": "BOLSITAS LENTEJUELAS COLORES ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 40,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 31,
-  "fields": {
+  "fields":{
    "nombre": "BORRADOR PIZARRA MAGNETICO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 32,
-  "fields": {
+  "fields":{
    "nombre": "BROCHES METALICOS DORADOS 50 UNIDADES 1 CAJITA",
    "categoria": "ESCOLAR",
    "stock": 150,
    "precio_coste": 770,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 33,
-  "fields": {
+  "fields":{
    "nombre": "CAJA GOMA DE BORRAR MIGA 20 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 3430,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 34,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA CON ELASTICO",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 702,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 35,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA PLASTIFICDA OFICIO",
    "categoria": "ESCOLAR",
    "stock": 28,
    "precio_coste": 490,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 36,
-  "fields": {
+  "fields":{
    "nombre": "CARTON 20 SETS OJITOS LOCOS BLANCOS CON ADHESIVO",
    "categoria": "ESCOLAR",
    "stock": 60,
    "precio_coste": 1820,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 37,
-  "fields": {
+  "fields":{
    "nombre": "CARTON PIEDRA 1.5MM 27.5X38.5CM 25 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 3100,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 38,
-  "fields": {
+  "fields":{
    "nombre": "CARTON PIEDRA 1.5MM 38.5X55CMS 25 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 6200,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 39,
-  "fields": {
+  "fields":{
    "nombre": "CARTON PIEDRA 1.5MM 55X77CM 25 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 12550,
    "descripcion": "",
    "precio": 950
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 40,
-  "fields": {
+  "fields":{
    "nombre": "CARTULINA DE COLOR PLIEGO",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 290,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 41,
-  "fields": {
+  "fields":{
    "nombre": "CARTULINA PINTADA",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 290,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 42,
-  "fields": {
+  "fields":{
    "nombre": "CHINCHES NIQUELADOS DORADOS 100 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 300,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 10
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 43,
-  "fields": {
+  "fields":{
    "nombre": "CHINCHES NIQUELADOS PLATEADOS 100 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 300,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 10
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 44,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE EMBALAJE 48MMX40MTS TRANSPARENTE 6",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2220,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 45,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR 12MMX40MTS 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 6960,
    "descripcion": "",
    "precio": 850
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 46,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR 18MMX40MTS 8 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 16,
    "precio_coste": 5520,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 47,
-  "fields": {
+  "fields":{
    "nombre": "CIRCUITO ELECTRICO BASICO ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 2200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 48,
-  "fields": {
+  "fields":{
    "nombre": "CIRCUITO ELECTRICO CON MOTOR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2340,
    "descripcion": "",
    "precio": 3300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 49,
-  "fields": {
+  "fields":{
    "nombre": "CLIPS 28MM 100 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 240,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 50,
-  "fields": {
+  "fields":{
    "nombre": "CLIPS METAL 33MM 100 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 280,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 51,
-  "fields": {
+  "fields":{
    "nombre": "COLA FRIA 125 GRS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 7050,
    "descripcion": "",
    "precio": 850
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 52,
-  "fields": {
+  "fields":{
    "nombre": "COLA FRIA 225 GRS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 12350,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 53,
-  "fields": {
+  "fields":{
    "nombre": "COMPAS CON LAPIZ",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 490,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 54,
-  "fields": {
+  "fields":{
    "nombre": "CORRECTOR POSTURA",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1355,
    "descripcion": "",
    "precio": 1900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 55,
-  "fields": {
+  "fields":{
    "nombre": "CORRECTOR PUNTA METALICA 7 ML 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 8290,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 56,
-  "fields": {
+  "fields":{
    "nombre": "CROQUERA CARTA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2290,
    "descripcion": "",
    "precio": 3500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 57,
-  "fields": {
+  "fields":{
    "nombre": "CROQUERA OFICIO TORRE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 3200,
    "descripcion": "",
    "precio": 4500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 58,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNILLO CUADRO GRANDE 7MM OFICIO 5 HOJAS",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 4750,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 59,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLAGE 80 HJS 5MM",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 60,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLAGE 80 HJS 7MM",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 61,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLAGE LISO 7MM",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 549,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 62,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLAGE LISO CROQUIS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 63,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO DE MUSICA MEDIA PAUTA",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 565,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 64,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO MUSICA PAUTA ENTERA",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 565,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 65,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO PROARTE",
    "categoria": "ESCOLAR",
    "stock": 60,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 66,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO TORRE",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 12000,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 67,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSOTARIO CROQUIS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 11900,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 68,
-  "fields": {
+  "fields":{
    "nombre": "CUCHILLO CARTONERO CHICO NARANJO 1 UNIDAD FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 220,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 69,
-  "fields": {
+  "fields":{
    "nombre": "CUCHILLO CARTONERO GRANDE NARANJO 1 UNIDAD FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 390,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 70,
-  "fields": {
+  "fields":{
    "nombre": "DEDO DE GOMA",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 190,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 71,
-  "fields": {
+  "fields":{
    "nombre": "DESTACADOR LAPIZ AMARILLO 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 72,
-  "fields": {
+  "fields":{
    "nombre": "DESTACADOR LAPIZ CELESTE 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 73,
-  "fields": {
+  "fields":{
    "nombre": "DESTACADOR LAPIZ NARANJO 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 74,
-  "fields": {
+  "fields":{
    "nombre": "DESTACADOR LAPIZ ROSADO 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 75,
-  "fields": {
+  "fields":{
    "nombre": "ELASTICOS 1/2 KILO BLANCO FULTONS",
    "categoria": "BAZAR",
    "stock": 100,
    "precio_coste": 2970,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 76,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS 12.5 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 4890,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 77,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 2 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 270,
    "descripcion": "",
    "precio": 100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 78,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 2.5 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 320,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 79,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 3.5 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 630,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 80,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 4 CM DIÁMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 800,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 81,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 5 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1600,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 82,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 6 CM DIAMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1900,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 83,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 7 CM DIÁMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1470,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 84,
-  "fields": {
+  "fields":{
    "nombre": "ESFERAS DE PLUMAVIT 9 CM DIÁMETRO RAY FEN",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 3060,
    "descripcion": "",
    "precio": 900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 85,
-  "fields": {
+  "fields":{
    "nombre": "FASTENERS PLASTICOS COLORES SURTIDOS 50 UN",
    "categoria": "ESCOLAR",
    "stock": 150,
    "precio_coste": 910,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 86,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO AMARILLO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 87,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO AZUL 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 88,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO BLANCO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 89,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO CAFE 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 90,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO CELESTE 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 91,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO FUCSIA 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 92,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO GRIS 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 93,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO LILA 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 94,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO MORADO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 95,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO NARANJA 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 96,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO NEGRO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 97,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO ROJO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 98,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO ROSADO 10 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 99,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO TRANSPARENTE 10 UNI",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1480,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 100,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO VERDE CLARO 10 UNI",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 101,
-  "fields": {
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO VERDE OSCURO 10 UNID",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 102,
-  "fields": {
+  "fields":{
    "nombre": "FORRO LIBRO PLASTICO TRANSPARENTE 10 UN",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 103,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO AMARILLO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 104,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO AZUL 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 105,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO BLANCO 10 UN",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 106,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO CAFE 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 107,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO CELESTE 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 108,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO FUCSIA 10 UNI",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 109,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO GRIS 10 UNID",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 110,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO LILA 10 UNID",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 111,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO MORADO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 112,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO NARANJA 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 113,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO NEGRO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 114,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO ROJO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 115,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO ROSADO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 116,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO TRANSPARENTE 10",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1740,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 117,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO VERDE 10 UN",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 118,
-  "fields": {
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO VERDE CLARO 10 U",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 119,
-  "fields": {
+  "fields":{
    "nombre": "FUNDAS TRANSPARENTE OFICIO 100UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 2670,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 120,
-  "fields": {
+  "fields":{
    "nombre": "FUNDAS TRANSPARENTRES CARTA 100UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 2510,
    "descripcion": "",
    "precio": 100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 121,
-  "fields": {
+  "fields":{
    "nombre": "GLITTER GLUE 6 COLORES 10ML ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 770,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 122,
-  "fields": {
+  "fields":{
    "nombre": "GOMA DE BORRAR FACTIS",
    "categoria": "ESCOLAR",
    "stock": 40,
    "precio_coste": 125,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 123,
-  "fields": {
+  "fields":{
    "nombre": "GOMA DE MIGA 36 UN SOFT PROARTE",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 4730,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 124,
-  "fields": {
+  "fields":{
    "nombre": "GOMA EVA BRILLANTE SET",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 800,
    "descripcion": "",
    "precio": 1350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 125,
-  "fields": {
+  "fields":{
    "nombre": "GOMA EVA FLORES ADHESIVAS ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 190,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 126,
-  "fields": {
+  "fields":{
    "nombre": "GOMA EVA SET",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 800,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 127,
-  "fields": {
+  "fields":{
    "nombre": "GREDA 1 KILO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 846,
    "descripcion": "",
    "precio": 1300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 128,
-  "fields": {
+  "fields":{
    "nombre": "HOJA TAMAÑO CARTA",
    "categoria": "ESCOLAR",
    "stock": 500,
    "precio_coste": 7,
    "descripcion": "",
    "precio": 30
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 129,
-  "fields": {
+  "fields":{
    "nombre": "JUEGO GEOMETRICO 30CM 4 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 830,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 130,
-  "fields": {
+  "fields":{
    "nombre": "LAMINAS PARA TERMOLAMINAR 75 MICRONES CARTA 100 U",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 6830,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 131,
-  "fields": {
+  "fields":{
    "nombre": "LANA 5 COLORES BASICOS 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 870,
    "descripcion": "",
    "precio": 1300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 132,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES 12 COLORES LARGOS HEXAGONALES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 780,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 133,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES 12 COLORES LARGOS ROSS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 890,
    "descripcion": "",
    "precio": 1250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 134,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES BICOLOR DELGADO 12 UN PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 1700,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 135,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES BICOLOR GRUESOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3650,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 136,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE CERA 12 COLORES JUMBO FULTONS",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 137,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE CERA DELGADOS 12 COLORES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 420,
    "descripcion": "",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 138,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE COLOR LARGO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 840,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 139,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE COLORES FABER CASTEL",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1500,
    "descripcion": "",
    "precio": 2100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 140,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE COLORES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 141,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES PASTEL GRASOS 12 COLORES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 7,
    "precio_coste": 780,
    "descripcion": "",
    "precio": 1300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 142,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ CORRECTOR 7ML 12UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 143,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ DE CERA CORTO JUMBO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 950,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 144,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO CON GOMA HB N°2 - 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 1570,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 145,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO FABER CASTEL",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 150,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 146,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO N°2 HB REDONDO 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 790,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 147,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO TECNICO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 2500,
    "descripcion": "",
    "precio": 3700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 148,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA AZUL 1.0MM 50 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 5030,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 149,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA CRISTAL AZUL PUNTA MEDIA 50 UNIDADES BIC",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 9480,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 150,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA CRISTAL NEGRO PUNTA MEDIA 50 UNIDADES BIC",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 9480,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 151,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA CRISTAL ROJO PUNTA MEDIA 50 UNIDADES BIC",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 9480,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 152,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA NEGRO 1.0MM 50 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 5030,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 153,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ PASTA ROJO 1.0MM 50 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 5030,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 154,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ SCRIPTO ARTEL",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 155,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ TINTA GEL 0.7MM AZUL 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 7140,
    "descripcion": "",
    "precio": 900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 156,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ TINTA GEL 0.7MM NEGRO 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 6960,
    "descripcion": "",
    "precio": 900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 157,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ TINTA GEL 0.7MM ROJO 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 6960,
    "descripcion": "",
    "precio": 900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 158,
-  "fields": {
+  "fields":{
    "nombre": "LETRAS AUTOADHESIVAS GOMA EVA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 970,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 159,
-  "fields": {
+  "fields":{
    "nombre": "LIMPIA PIPAS METÁLICAS 30 UNIDADES APROX ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 930,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 160,
-  "fields": {
+  "fields":{
    "nombre": "LIMPIA PIPAS SURTIDAS 30 UNIDADES APROX ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 90,
    "precio_coste": 870,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 161,
-  "fields": {
+  "fields":{
    "nombre": "LUPA 60MM ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 660,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 162,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR MULTIUSO NEGRO PUNTA MEDIA 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 163,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE BISELADO AZUL 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3000,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 164,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE BISELADO NEGRO 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3000,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 165,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE BISELADO ROJO 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3000,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 166,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE REDONDO AZUL 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2630,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 167,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE REDONDO NEGRO 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2630,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 168,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR PERMANENTE REDONDO ROJO 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2630,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 169,
-  "fields": {
+  "fields":{
    "nombre": "MESCLADOR 4 DIVISIONES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 113,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 170,
-  "fields": {
+  "fields":{
    "nombre": "MESCLADOR 6 DIVISIONES",
    "categoria": "ESCOLAR",
    "stock": 23,
    "precio_coste": 170,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 171,
-  "fields": {
+  "fields":{
    "nombre": "MINAS 0.5MM HB 24 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 3570,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 172,
-  "fields": {
+  "fields":{
    "nombre": "MINAS 0.7MM HB 24 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 5320,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 173,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA BAÑO 3 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 174,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA COCINA 3 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 175,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA COMEDOR 5 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 176,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA DORMITORIO 3 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 177,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA LIVING 4 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 178,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA SEÑALES DE TRANSITO 5 PIEZAS",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 179,
-  "fields": {
+  "fields":{
    "nombre": "MUEBLES PARA MAQUETA TERRAZA 4 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 180,
-  "fields": {
+  "fields":{
    "nombre": "NUMEROS GOMA EVA AUTOADHESIVOS 56 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 970,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 181,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA 8X8MM RAULI 50CMS 3 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 182,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA 9X9MM RAULI 50CMS 2 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 183,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 10X10MM 50CMS 2 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 320,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 184,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 2X2MM 50CMS 8 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 185,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 3X3MM 50CMS 7 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 186,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 4X4MM 50CMS 6 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 187,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 5X5MM 50CMS 5 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 188,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 6X6MM 50CMS 4 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 189,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA RAULI 7X7MM 50CMS 3 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 190,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA REDONDO 10MM 50CMS 2 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 191,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA REDONDO 12MM 50CMS 2 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 192,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA REDONDO 6MM 50CMS 4 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 193,
-  "fields": {
+  "fields":{
    "nombre": "PALO DE MAQUETA REDONDO 8MM 50CMS 3 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 194,
-  "fields": {
+  "fields":{
    "nombre": "PALOS DE HELADO NATURAL",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 360,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 195,
-  "fields": {
+  "fields":{
    "nombre": "PALOS DE HELADOS COLORES",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 418,
    "descripcion": "",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 196,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL ADHESIVO GLOSSY 180 GRAMOS OFICIO 100 H",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 8490,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 197,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL ADHESIVO MATE 180 GRAMOS OFICIO 100",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 8480,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 198,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL BOND",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 350,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 199,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL CALCO TAMAÑO OFICIO 25 HOJAS NEGRO FULTONS",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 1730,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 200,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL CRAFT",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 255,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 201,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL CREPE",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 290,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 202,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL LUSTRE 10X10",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 257,
    "descripcion": "",
    "precio": 360
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 203,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL LUSTRE 16X16",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 615,
    "descripcion": "",
    "precio": 860
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 204,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL MANTEQUILLA 80X100CMS 40GRS 100 UNI",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 12470,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 205,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL MILIMETRADO OFICIO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 350,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 206,
-  "fields": {
+  "fields":{
    "nombre": "PASTA PARA MODELAR BLANCA 250 GRAMOS DAS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1250,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 207,
-  "fields": {
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 5450,
    "descripcion": "",
    "precio": 650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 208,
-  "fields": {
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 8 GR 24 UN PROARTE",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 6530,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 209,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°10 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1460,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 210,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°10 PELO CAMELLO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 1370,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 211,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°12 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1740,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 212,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°12 PELO CAMELLO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 213,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°2 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2060,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 214,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°2 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 1790,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 215,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°4 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2360,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 216,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°4 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 1980,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 217,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°8 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2740,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 218,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°8 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2450,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 219,
-  "fields": {
+  "fields":{
    "nombre": "PINZAS DE MADERA 45 UNIDADES ART & CRAFT",
    "categoria": "ESCOLAR",
    "stock": 90,
    "precio_coste": 1020,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 220,
-  "fields": {
+  "fields":{
    "nombre": "PLASTICINA 12 COLORES TRIANGULAR FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1020,
    "descripcion": "",
    "precio": 1450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 221,
-  "fields": {
+  "fields":{
    "nombre": "PLASTICINA ECONIMICA",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 222,
-  "fields": {
+  "fields":{
    "nombre": "PLASTICINA TRIANGULAR",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 974,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 223,
-  "fields": {
+  "fields":{
    "nombre": "PLUMAS BLANCAS 10 A 15CM 50 PIEZAS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 224,
-  "fields": {
+  "fields":{
    "nombre": "PLUMAS LARGAS 10-15 CMS 50 UNIDADES ART & CRAFT",
    "categoria": "ESCOLAR",
    "stock": 50,
    "precio_coste": 1290,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 225,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON 12 COLORES MURANO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 850,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 226,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON PIZARRA AZUL 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 227,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON PIZARRA NEGRO 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 228,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON PIZARRA ROJO 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 229,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON PIZARRA VERDE 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 3940,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 230,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON SCRIPTO 6 COLORES FULTON",
    "categoria": "ESCOLAR",
    "stock": 7,
    "precio_coste": 390,
    "descripcion": "",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 231,
-  "fields": {
+  "fields":{
    "nombre": "PORTAMINAS 0.5 NEGRO/AZUL 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 5460,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 232,
-  "fields": {
+  "fields":{
    "nombre": "PORTAMINAS 0.7MM COLOR SURTIDO 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 9780,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 233,
-  "fields": {
+  "fields":{
    "nombre": "REGLA ACRILICA 15CM FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 115,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 234,
-  "fields": {
+  "fields":{
    "nombre": "REGLA METALICA 15CMS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 390,
    "descripcion": "",
    "precio": 600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 235,
-  "fields": {
+  "fields":{
    "nombre": "REGLA METALICA 30CMS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 236,
-  "fields": {
+  "fields":{
    "nombre": "REGLA PLASTICA 20CMS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 125,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 237,
-  "fields": {
+  "fields":{
    "nombre": "REGLA PLASTICA 30CMS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 190,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 238,
-  "fields": {
+  "fields":{
    "nombre": "RESMA TAMAÑO CARTA",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 3290,
    "descripcion": "",
    "precio": 4700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 239,
-  "fields": {
+  "fields":{
    "nombre": "SACAPUNTA PLAST C/DEP OVALADO 12 UN PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 4010,
    "descripcion": "",
    "precio": 470
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 240,
-  "fields": {
+  "fields":{
    "nombre": "SACAPUNTAS DOBLE 12 UNIDADES PAX",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 4110,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 241,
-  "fields": {
+  "fields":{
    "nombre": "SISTEMA SOLAR 10 PIEZAS ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1050,
    "descripcion": "",
    "precio": 1700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 242,
-  "fields": {
+  "fields":{
    "nombre": "SOBRE 1/2 OFICIO BLANCO 25 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 2810,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 243,
-  "fields": {
+  "fields":{
    "nombre": "SOBRE AMERICANO 22,8X10.7 CM 70 GRS BLANCO 25",
    "categoria": "ESCOLAR",
    "stock": 75,
    "precio_coste": 930,
    "descripcion": "",
    "precio": 100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 244,
-  "fields": {
+  "fields":{
    "nombre": "SOBRE CARTA 15.4X12.4CM BLANCO 25 UNIDADES NUOVO",
    "categoria": "ESCOLAR",
    "stock": 75,
    "precio_coste": 670,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 245,
-  "fields": {
+  "fields":{
    "nombre": "TAMPON DE HUELLA DACTILAR FULTONS",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1150,
    "descripcion": "",
    "precio": 2000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 246,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA 12 COLORES 15MM",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1273,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 247,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA 12 COLORES 22MM",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 1655,
    "descripcion": "",
    "precio": 2350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 248,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA 6 COLORES 15MM",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1036,
    "descripcion": "",
    "precio": 1450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 249,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA 6 COLORES TORRE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1118,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 250,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR 13CMS NEGRO PUNTA ROMA",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 380,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 251,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR MANGO NARANJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 540,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 252,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR PARA ZURDOS BLISTER FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 610,
    "descripcion": "",
    "precio": 900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 253,
-  "fields": {
+  "fields":{
    "nombre": "TIRALINEAS 0.3 NEGRO 12 UN PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 10010,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 254,
-  "fields": {
+  "fields":{
    "nombre": "TIRALINEAS 0.5 NEGRO 12 UN PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 9380,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 255,
-  "fields": {
+  "fields":{
    "nombre": "TIRALINEAS 0.7 NEGRO 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 10000,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 256,
-  "fields": {
+  "fields":{
    "nombre": "TIZA 100 UNIDADES COLORES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 1440,
    "descripcion": "",
    "precio": 100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 257,
-  "fields": {
+  "fields":{
    "nombre": "TIZA CAJA BLANCA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2810,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 258,
-  "fields": {
+  "fields":{
    "nombre": "TRANSPORTADOR 180º 10CM BISELADO FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 140,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 259,
-  "fields": {
+  "fields":{
    "nombre": "CROQUERA DOBLE FAZ ESPIRAL OFICIO 50 HOJAS ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 2290,
    "descripcion": "",
    "precio": 3200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 260,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°6 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2260,
    "descripcion": "",
    "precio": 270
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 261,
-  "fields": {
+  "fields":{
    "nombre": "PINCEL N°6 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2550,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 262,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON SCRIPTO 12 COLORES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 710,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 263,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DOBLE CONTACTO 18MMX13.7MTS 1 UNIDAD LAVORO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 520,
    "descripcion": "",
    "precio": 750
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 264,
-  "fields": {
+  "fields":{
    "nombre": "CINTA ADHESIVA ANCHA 12MMX60MTS 12 UNIDADES NUOVO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 2000,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 265,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR VERDE 24MMX20MTS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 266,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR AMARILLO 24MMX20MT LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 267,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR CELESTE 24MMX20MTS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 268,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR MORADO 24MMX20MTS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 269,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR ROJA 18MMX20MTS USATAPE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 450,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 270,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE MONTAJE DOBLE CONTACTO 18MMX6MTS PALA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 680,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 271,
-  "fields": {
+  "fields":{
    "nombre": "CINTA DE ENMASCARAR AZUL 24MMX20MTS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 272,
-  "fields": {
+  "fields":{
    "nombre": "CORCHETERA GRANDE 15 CM PLASTICA NUOVO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 3700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 273,
-  "fields": {
+  "fields":{
    "nombre": "FUNDAS TRANSPARENTRES CARTA 100UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 2510,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 274,
-  "fields": {
+  "fields":{
    "nombre": "FUNDAS TRANSPARENTE OFICIO 100UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 2670,
    "descripcion": "",
    "precio": 50
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 275,
-  "fields": {
+  "fields":{
    "nombre": "PERFORADORA PEQUEÑA NEGRA BASE PLASTICA FULTONS",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2440,
    "descripcion": "",
    "precio": 3500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 276,
-  "fields": {
+  "fields":{
    "nombre": "OPALINA OFICIO LISA 200 GR 100 HOJAS DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 100,
    "precio_coste": 10100,
    "descripcion": "",
    "precio": 150
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 277,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLEGE CALIGRAFIA HORIZONTAL 80 HOJAS 10 UNIDADES ROSS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 4980,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 278,
-  "fields": {
+  "fields":{
    "nombre": "GREDA 1 KILO APROX",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 495,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 279,
-  "fields": {
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 36 GRAMOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 9540,
    "descripcion": "",
    "precio": 1120
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 280,
-  "fields": {
+  "fields":{
    "nombre": "ESCUADRA 20CM 45° 1 UNIDAD FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 280,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 281,
-  "fields": {
+  "fields":{
    "nombre": "ESCUADRA ACRILICA 60° 22CM FULTONS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 280,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 282,
-  "fields": {
+  "fields":{
    "nombre": "ESCUADRA BISELADA 25CM 60º PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 283,
-  "fields": {
+  "fields":{
    "nombre": "CORCHETES 23/6 1000 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 230,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 284,
-  "fields": {
+  "fields":{
    "nombre": "CORCHETES 26/6 5000 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 590,
    "descripcion": "",
    "precio": 850
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 285,
-  "fields": {
+  "fields":{
    "nombre": "CORCHETERA MINI ROJO + CORCHETES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1550,
    "descripcion": "",
    "precio": 2200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 286,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES GRAFITOS DE DIBUJO SURTIDOS 12 UNIDADES ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 870,
    "descripcion": "",
    "precio": 1250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 287,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLEGE COMPOSICION 80 HOJAS 10 UNIDADES ROSS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 4980,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 288,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES 12 COLORES ACUARELABLES GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 2290,
    "descripcion": "",
    "precio": 3200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 289,
-  "fields": {
+  "fields":{
    "nombre": "ACUARELA 12 COLORES EN CAJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1860,
    "descripcion": "",
    "precio": 2600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 290,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES 12 COLORES JUMBO HEXAGONALES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 2500,
    "descripcion": "",
    "precio": 3500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 291,
-  "fields": {
+  "fields":{
    "nombre": "ESTUCHE PAPEL VOLANTIN 9 HJS PROARTE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1700,
    "descripcion": "",
    "precio": 2400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 292,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO TRIANGULAR JUMBO 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1310,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 293,
-  "fields": {
+  "fields":{
    "nombre": "TIRALINEAS 0.1 NEGRO 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 9380,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 294,
-  "fields": {
+  "fields":{
    "nombre": "SACAPUNTAS DOBLE 12 UNIDADES PAX",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 4110,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 295,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO COLLEGE 5MM 80 HOJAS 10 UNIDADES ROSS",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 4980,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 296,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO 7MM 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 297,
-  "fields": {
+  "fields":{
    "nombre": "PISTOLA DE SILICONA 10WTS CON INTERRUPTOR LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2900,
    "descripcion": "",
    "precio": 4100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 298,
-  "fields": {
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 5450,
    "descripcion": "",
    "precio": 650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 299,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO HEXAGONAL HB N°2 - 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1200,
    "descripcion": "",
    "precio": 1700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 300,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES GRAFITO TRIANGULAR HB N°2 PROARTE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 2000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 301,
-  "fields": {
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 5450,
    "descripcion": "",
    "precio": 650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 302,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR MANGO NARANJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 540,
    "descripcion": "",
    "precio": 750
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 303,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR CON CLIP LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 970,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 304,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO TRIANGULAR JUMBO 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 24,
    "precio_coste": 1310,
    "descripcion": "",
    "precio": 350
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 305,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES COLORES 12+2 GRAFITO PROARTE",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 306,
-  "fields": {
+  "fields":{
    "nombre": "TIZA JUMBO 6 COLORES FLUOR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1130,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 307,
-  "fields": {
+  "fields":{
    "nombre": "FRASCO ESCARCHA GLITTER 6 COLORES 80 GRS ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 2,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 3650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 308,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CROQUIS LISO (HOJA BLANCA) 100 HOJAS 10",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 309,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO 7MM 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 310,
-  "fields": {
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CAPITAN TSUBASA 100 HOJAS 10",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 311,
-  "fields": {
+  "fields":{
    "nombre": "SET LANAS 5 COLORES 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 312,
-  "fields": {
+  "fields":{
    "nombre": "TARJETA KARDEX 12.5X20.5CMS 25 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1080,
    "descripcion": "",
    "precio": 1550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 313,
-  "fields": {
+  "fields":{
    "nombre": "ALFILER METALICO",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 380,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 314,
-  "fields": {
+  "fields":{
    "nombre": "BAYMAX",
    "categoria": "ESCOLAR",
    "stock": 0,
    "precio_coste": 0,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 315,
-  "fields": {
+  "fields":{
    "nombre": "block dibujo 99 1/8",
    "categoria": "ESCOLAR",
    "stock": 30,
    "precio_coste": 990,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 316,
-  "fields": {
+  "fields":{
    "nombre": "block dibujo liceo murano",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 779,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 317,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA CARTULINA",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1036,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 318,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA CARTULINA ESPAÑOLA",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1250,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 319,
-  "fields": {
+  "fields":{
    "nombre": "carpeta cartulina fluor",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1355,
    "descripcion": "",
    "precio": 1900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 320,
-  "fields": {
+  "fields":{
    "nombre": "carpeta con elastico",
    "categoria": "BAZAR",
    "stock": 8,
    "precio_coste": 702,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 321,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA GOMA",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1195,
    "descripcion": "",
    "precio": 1700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 322,
-  "fields": {
+  "fields":{
    "nombre": "CARPETA NARANJA RHEIN",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 711,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 323,
-  "fields": {
+  "fields":{
    "nombre": "carpeta plastificada oficio",
    "categoria": "ESCOLAR",
    "stock": 42,
    "precio_coste": 490,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 324,
-  "fields": {
+  "fields":{
    "nombre": "CARTON FORRADO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 590,
    "descripcion": "",
    "precio": 850
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 325,
-  "fields": {
+  "fields":{
    "nombre": "CARTULINA ESPAÑOLA",
    "categoria": "ESCOLAR",
    "stock": 25,
    "precio_coste": 296,
    "descripcion": "",
    "precio": 450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 326,
-  "fields": {
+  "fields":{
    "nombre": "CHINCHE",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 326,
    "descripcion": "",
    "precio": 460
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 327,
-  "fields": {
+  "fields":{
    "nombre": "CORRECTOR FULTON LAPIZ",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 284,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 328,
-  "fields": {
+  "fields":{
    "nombre": "cuadernillo 7mm",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 171,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 329,
-  "fields": {
+  "fields":{
    "nombre": "cuaderno college 7mm 100",
    "categoria": "ESCOLAR",
    "stock": 92,
    "precio_coste": 549,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 330,
-  "fields": {
+  "fields":{
    "nombre": "cuaderno college 7mm 80",
    "categoria": "ESCOLAR",
    "stock": 92,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 331,
-  "fields": {
+  "fields":{
    "nombre": "cuaderno college liso croquis",
    "categoria": "ESCOLAR",
    "stock": 32,
    "precio_coste": 549,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 332,
-  "fields": {
+  "fields":{
    "nombre": "Cuaderno college mat 80",
    "categoria": "ESCOLAR",
    "stock": 32,
    "precio_coste": 499,
    "descripcion": "",
    "precio": 700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 333,
-  "fields": {
+  "fields":{
    "nombre": "ECOLAPIZ",
    "categoria": "ESCOLAR",
    "stock": 7,
    "precio_coste": 1990,
    "descripcion": "",
    "precio": 2800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 334,
-  "fields": {
+  "fields":{
    "nombre": "ESTUCHE CARTON PIEDRA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1700,
    "descripcion": "",
    "precio": 2400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 335,
-  "fields": {
+  "fields":{
    "nombre": "ETIQUETA INSENTIVOS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 775,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 336,
-  "fields": {
+  "fields":{
    "nombre": "FLAUTA DULCE",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 2000,
    "descripcion": "",
    "precio": 2800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 337,
-  "fields": {
+  "fields":{
    "nombre": "GOMA EVA 60X40",
    "categoria": "ESCOLAR",
    "stock": 9,
    "precio_coste": 400,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 338,
-  "fields": {
+  "fields":{
    "nombre": "GOMA EVA 60X41 GLITTER",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 750,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 339,
-  "fields": {
+  "fields":{
    "nombre": "GRAFITO 4H",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 846,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 340,
-  "fields": {
+  "fields":{
    "nombre": "GRAFITO 6H",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 846,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 341,
-  "fields": {
+  "fields":{
    "nombre": "HILO DE PESCAR",
    "categoria": "BAZAR",
    "stock": 4,
    "precio_coste": 895,
    "descripcion": "",
    "precio": 1300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 342,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES COLORES JUMBO MURANO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 2655,
    "descripcion": "",
    "precio": 3800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 343,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ  GRAFITO TRIANGULAR JUMBO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 251,
    "descripcion": "",
    "precio": 400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 344,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO TECNICO 6B",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 750,
    "descripcion": "",
    "precio": 1100
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 345,
-  "fields": {
+  "fields":{
    "nombre": "MARCADOR DE PIZARRA",
    "categoria": "ESCOLAR",
    "stock": 36,
    "precio_coste": 296,
    "descripcion": "",
    "precio": 500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 346,
-  "fields": {
+  "fields":{
    "nombre": "PALO HELADO COLOR JUMBO",
    "categoria": "BAZAR",
    "stock": 4,
    "precio_coste": 655,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 347,
-  "fields": {
+  "fields":{
    "nombre": "PALO HLADO NATURAL",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 795,
    "descripcion": "",
    "precio": 1200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 348,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL FOTOCOPIA OFICIO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 4090,
    "descripcion": "",
    "precio": 5800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 349,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL FOTOCOPIADORA OFCIO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 3990,
    "descripcion": "",
    "precio": 5600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 350,
-  "fields": {
+  "fields":{
    "nombre": "PAPEL LUSTR 10 X10",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 257,
    "descripcion": "",
    "precio": 360
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 351,
-  "fields": {
+  "fields":{
    "nombre": "PINCELES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 189,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 352,
-  "fields": {
+  "fields":{
    "nombre": "PINCELES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 195,
    "descripcion": "",
    "precio": 280
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 353,
-  "fields": {
+  "fields":{
    "nombre": "PINCELES",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 130,
    "descripcion": "",
    "precio": 190
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 354,
-  "fields": {
+  "fields":{
    "nombre": "PINCELES 12",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 189,
    "descripcion": "",
    "precio": 300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 355,
-  "fields": {
+  "fields":{
    "nombre": "PIZARRA BLANCA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2985,
    "descripcion": "",
    "precio": 4200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 356,
-  "fields": {
+  "fields":{
    "nombre": "PIZARRA MAGNETICA ESCOLAR",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 3320,
    "descripcion": "",
    "precio": 4700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 357,
-  "fields": {
+  "fields":{
    "nombre": "PLASTICINA TRIANGULAR MURANO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 974,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 358,
-  "fields": {
+  "fields":{
    "nombre": "PLUMON ESCOLAR JUMBO MURANO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 1800,
    "descripcion": "",
    "precio": 2600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 359,
-  "fields": {
+  "fields":{
    "nombre": "PUNZON PLASTICO PUNTA METAL",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 700,
    "descripcion": "",
    "precio": 1000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 360,
-  "fields": {
+  "fields":{
    "nombre": "REGLA 20 CM MURANO",
    "categoria": "ESCOLAR",
    "stock": 20,
    "precio_coste": 113,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 361,
-  "fields": {
+  "fields":{
    "nombre": "REGLA 30 CM MURANO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 171,
    "descripcion": "",
    "precio": 250
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 362,
-  "fields": {
+  "fields":{
    "nombre": "SACAPUNTA CPM DEPOSITO",
    "categoria": "ESCOLAR",
    "stock": 12,
    "precio_coste": 210,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 363,
-  "fields": {
+  "fields":{
    "nombre": "SET DESTACADOR 6 U",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1883,
    "descripcion": "",
    "precio": 2700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 364,
-  "fields": {
+  "fields":{
    "nombre": "SILICONA EN BARA 7 MM",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1150,
    "descripcion": "",
    "precio": 1650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 365,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA 250",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1416,
    "descripcion": "",
    "precio": 2000
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 366,
-  "fields": {
+  "fields":{
    "nombre": "TEMPERA SOLIDA 12 COLORES",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 4600,
    "descripcion": "",
    "precio": 5500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 367,
-  "fields": {
+  "fields":{
    "nombre": "TIJERA ESCOLAR NURANO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 342,
    "descripcion": "",
    "precio": 550
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 368,
-  "fields": {
+  "fields":{
    "nombre": "GOMA DE BORRAR GRANDE 3 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 450,
    "descripcion": "",
    "precio": 650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 369,
-  "fields": {
+  "fields":{
    "nombre": "GOMA DE BORRAR CHICA 6 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 450,
    "descripcion": "",
    "precio": 650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 370,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES PASTEL  12 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1030,
    "descripcion": "",
    "precio": 1500
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 371,
-  "fields": {
+  "fields":{
    "nombre": "GLITTER 6 COLORES",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1170,
    "descripcion": "",
    "precio": 1650
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 372,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE COLORES JUNMBO 12 COLORES",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 3410,
    "descripcion": "",
    "precio": 4800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 373,
-  "fields": {
+  "fields":{
    "nombre": "PLUMONES JUMBO 12 COLORES",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 2580,
    "descripcion": "",
    "precio": 3700
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 374,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE CERA JUMBOO 24 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 2730,
    "descripcion": "",
    "precio": 3900
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 375,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES BICOLOR 12U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 2450,
    "descripcion": "",
    "precio": 3450
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 376,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES SCRIPTO 12 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 980,
    "descripcion": "",
    "precio": 1400
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 377,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE COLORES",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1100,
    "descripcion": "",
    "precio": 1600
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 378,
-  "fields": {
+  "fields":{
    "nombre": "LAPICES DE CERA JUMBO 12 U",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1290,
    "descripcion": "",
    "precio": 1800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 379,
-  "fields": {
+  "fields":{
    "nombre": "ACUARELA 15 COLORES",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 560,
    "descripcion": "",
    "precio": 800
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 380,
-  "fields": {
+  "fields":{
    "nombre": "SET DE GEOMETRIA",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2340,
    "descripcion": "",
    "precio": 3300
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 381,
-  "fields": {
+  "fields":{
    "nombre": "LAPIZ GRAFITO",
    "categoria": "ESCOLAR",
    "stock": 60,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 200
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 382,
-  "fields": {
+  "fields":{
    "nombre": "ADHESIVO INSTANTANEO EXTRA FUERTE PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 4000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 383,
-  "fields": {
+  "fields":{
    "nombre": "ADHESIVO MULTIUSO 100CC 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 12050,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 384,
-  "fields": {
+  "fields":{
    "nombre": "ALFILERES 50GRS METAL 25MM FULTONS",
    "categoria": "BAZAR",
    "stock": 6,
    "precio_coste": 470,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 385,
-  "fields": {
+  "fields":{
    "nombre": "AMARRAS METALICAS 8CMS COLORES 400 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 930,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 386,
-  "fields": {
+  "fields":{
    "nombre": "ARPILLERA COLOR NATURAL 40X60CMS 1 UNIDAD ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 1870,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 387,
-  "fields": {
+  "fields":{
    "nombre": "ARPILLERA ROJA 40X60CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 1870,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 388,
-  "fields": {
+  "fields":{
    "nombre": "ARPILLERA VERDE 40X60CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 1870,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 389,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PARA CROQUIS 16X21CM PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1990,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 390,
-  "fields": {
+  "fields":{
    "nombre": "BLOCK PARA CROQUIS 27X38CM PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 391,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 392,
+  "fields":{
    "nombre": "BOLIGRAFO NEGRO LUSSO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 392,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 395,
+  "fields":{
    "nombre": "BOLSA DE BASURA 80X110CM 10 UNIDADES BRESEE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1190,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 393,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 396,
+  "fields":{
    "nombre": "BOMBITAS DE AGUA CON ADAPTADOR 100 UNIDADES BALLOONS",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 425,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 394,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 397,
+  "fields":{
    "nombre": "BROCHA 2 PULGADAS 1 UNIDAD ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 630,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 395,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 398,
+  "fields":{
    "nombre": "BROCHES METALICOS DORADOS 50 UNIDADES 1 CAJITA FULTONS",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 770,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 396,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 400,
+  "fields":{
    "nombre": "CAJA GOMA DE BORRAR MIGA 20 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 3520,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 397,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 401,
+  "fields":{
    "nombre": "CARMÍN TEMPERA 120ML PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 700,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 398,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 403,
+  "fields":{
    "nombre": "CARPETA CARTULINA METALICA 10 HJS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1180,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 399,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 404,
+  "fields":{
    "nombre": "CARPETA CON FUNDAS OFICIO 10 FUNDAS NEGRO VINIL 1 UNIDAD FULTONS",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1710,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 400,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 405,
+  "fields":{
    "nombre": "CARPETA DE CARTÓN 14 HJS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 401,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 406,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO AMARILLO 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 402,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 407,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO AZUL JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 403,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 408,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO BLANCO 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 404,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 409,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO CAFE 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 405,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 410,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO CELESTE 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 406,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 411,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO GRIS 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 407,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 412,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO NEGRO 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 408,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 413,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO ROJO JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 409,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 414,
+  "fields":{
    "nombre": "CARPETA OFICIO CON ACCO CLIP PLASTICO VERDE CLARO 1 UNIDAD JRF",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 410,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 415,
+  "fields":{
    "nombre": "CARPETA PAPEL ENTRETENIDO 9 HJS 18 DISEÑOS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 411,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 416,
+  "fields":{
    "nombre": "CARPETA PAPEL LUSTRE 14 HJS FULTONS",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 1130,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 412,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 417,
+  "fields":{
    "nombre": "CINTA CORRECTORA 5MTSX5MM 1 UNIDAD COLOR SURTIDO TAMAÑO 8X3CM LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 910,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 413,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 418,
+  "fields":{
    "nombre": "CINTA CORRECTORA 5MTX5MM 1 UNIDAD COLOR SURTIDO TAMAÑO 8X3CM LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 5460,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 414,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 419,
+  "fields":{
    "nombre": "CINTA DE EMBALAJE TRANSPARENTE 48MMX30MTS 6 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1970,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 415,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 420,
+  "fields":{
    "nombre": "CINTA DE MONTAJE DOBLE CONTACTO 18MMX6MTS PALA",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 4080,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 416,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 421,
+  "fields":{
    "nombre": "CINTA DE MONTAJE DOBLE CONTACTO 18MMX6MTS PALA",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 680,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 417,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 422,
+  "fields":{
    "nombre": "CINTA DOBLE CONTACTO 24MMX13.7MTS 1 UNIDAD LAVORO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 3525,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 418,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 423,
+  "fields":{
    "nombre": "CINTA DOBLE CONTACTO 24MMX13.7MTS 1 UNIDAD LAVORO",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 705,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 419,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 424,
+  "fields":{
    "nombre": "COLA FRIA 125 GRS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 7050,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 420,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 425,
+  "fields":{
    "nombre": "COLA FRIA 125 GRS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 7050,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 421,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 426,
+  "fields":{
    "nombre": "COLA FRIA 38 GRAMOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 3340,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 422,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 427,
+  "fields":{
    "nombre": "CORRECTOR PUNTA METALICA 7 ML 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 8290,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 423,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 428,
+  "fields":{
    "nombre": "CORRECTOR PUNTA METALICA 7ML 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 8290,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 424,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 429,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO 7MM 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 425,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 430,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO 7MM 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 426,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 431,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CAPITAN TSUBASA 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 427,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 432,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CAPITAN TSUBASA 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 428,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 433,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CROQUIS LISO (HOJA BLANCA) 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 429,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 434,
+  "fields":{
    "nombre": "CUADERNO UNIVERSITARIO CROQUIS LISO 100 HOJAS 10 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 430,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 435,
+  "fields":{
    "nombre": "CUENTAS MADERAS COLORES SURTIDOS 30UN ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 431,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 436,
+  "fields":{
    "nombre": "CUENTAS MADERAS COLORES SURTIDOS 30UN ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1240,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 432,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 437,
+  "fields":{
    "nombre": "CUENTAS PLASTICAS COLORES PASTELES 30GRS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 433,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 438,
+  "fields":{
    "nombre": "CUENTAS PLASTICAS COLORES PASTELES 30GRS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 434,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 439,
+  "fields":{
    "nombre": "DESTACADOR DE ESCRITORIO BISELADO VERDE 12 UNIDADES FULTON",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 4130,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 435,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 440,
+  "fields":{
    "nombre": "DESTACADOR DE ESCRITORIO BISELADO VERDE 12 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 4130,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 436,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 441,
+  "fields":{
    "nombre": "DESTACADOR LAPIZ CELESTE 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 437,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 442,
+  "fields":{
    "nombre": "DESTACADOR LAPIZ CELESTE 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 3450,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 438,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 443,
+  "fields":{
    "nombre": "DESTACADOR LAPIZ NARANJO 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 439,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 444,
+  "fields":{
    "nombre": "DESTACADOR LAPIZ NARANJO 12 UNIDADES ISOFIT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 440,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 445,
+  "fields":{
    "nombre": "DOMINO CAJA PLASTICA 9MM",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 441,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 446,
+  "fields":{
    "nombre": "DOMINO EN MALETIN 7MM",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 442,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 447,
+  "fields":{
    "nombre": "DOMINO EN MALETIN 7MM",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 2640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 443,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 448,
+  "fields":{
    "nombre": "DOMINO TORERO 9MM COLOR SURTIDO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 444,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 449,
+  "fields":{
    "nombre": "DOMINO TORERO 9MM COLOR SURTIDO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 2640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 445,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 450,
+  "fields":{
    "nombre": "ESCARCHA GLITTER GLUE 40ML 12 UNIDADES COLORES SURTIDOS ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 1,
    "precio_coste": 5640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 446,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 451,
+  "fields":{
    "nombre": "ESCARCHA GLITTER GLUE 40ML 12 UNIDADES COLORES SURTIDOS ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 1,
    "precio_coste": 5640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 447,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 452,
+  "fields":{
    "nombre": "ESPIRALES PLASTICOS NEGROS 58 PASOS 10MM 100 UNIDADES DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 7140,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 448,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 453,
+  "fields":{
    "nombre": "ESPIRALES PLASTICOS NEGROS 58 PASOS 14MM 100 UNIDADES DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 10710,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 449,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 454,
+  "fields":{
    "nombre": "EST CARTON MICROCORRUGADO 6 HJS PROARTE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 990,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 450,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 455,
+  "fields":{
    "nombre": "ESTUCHE CARTULINA PINTADA 18HJS PROARTE",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 1290,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 451,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 456,
+  "fields":{
    "nombre": "ETIQUETA ADHESIVA TABLA DE MULTIPLICAR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 5200,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 452,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 457,
+  "fields":{
    "nombre": "ETIQUETA ADHESIVA TABLA DE MULTIPLICAR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 520,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 453,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 458,
+  "fields":{
    "nombre": "ETIQUETA ADHESIVA TABLA PERIODICA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 6200,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 454,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 459,
+  "fields":{
    "nombre": "ETIQUETA ADHESIVA TABLA PERIODICA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 620,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 455,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 460,
+  "fields":{
    "nombre": "ETIQUETAS ESCOLAR CON LINEAS AZUL 35X70MM 48UN LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 670,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 456,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 461,
+  "fields":{
    "nombre": "ETIQUETAS ESCOLAR CON LINEAS ROJA 35X70MM 48UN LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 640,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 457,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO AMARILLO 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 458,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO AMARILLO 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 459,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO AZUL 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 460,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO AZUL 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 461,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO CAFE 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 462,
-  "fields": {
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO AMARILLO 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 463,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO AMARILLO 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 464,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO AZUL 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 465,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO AZUL 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 466,
+  "fields":{
    "nombre": "FORRO COLLEGE PLASTICO CAFE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 463,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO NARANJA 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 464,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO NARANJA 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 465,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO ROJO 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 466,
-  "fields": {
-   "nombre": "FORRO COLLEGE PLASTICO ROJO 10 UNIDADES ESPINOZA",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 1560,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 467,
-  "fields": {
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO CAFE 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 468,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO NARANJA 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 469,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO NARANJA 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 470,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO ROJO 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 471,
+  "fields":{
+   "nombre": "FORRO COLLEGE PLASTICO ROJO 10 UNIDADES ESPINOZA",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 1560,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 472,
+  "fields":{
    "nombre": "FORRO COLLEGE PVC TRANSPARENTE 1 UNIDAD LAVORO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 2500,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 468,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 473,
+  "fields":{
    "nombre": "FORRO COLLEGE PVC TRANSPARENTE 1 UNIDAD LAVORO",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 250,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 469,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 474,
+  "fields":{
    "nombre": "FORRO LIBRO PLASTICO TRANSPARENTE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 470,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 475,
+  "fields":{
    "nombre": "FORRO LIBRO PLASTICO TRANSPARENTE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 5550,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 471,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 476,
+  "fields":{
    "nombre": "FORRO LIBRO PLASTICO TRANSPARENTE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1850,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 472,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 477,
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO TRANSPARENTE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 5220,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 473,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 478,
+  "fields":{
    "nombre": "FORRO UNIVERSITARIO PLASTICO TRANSPARENTE 10 UNIDADES ESPINOZA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1740,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 474,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 479,
+  "fields":{
    "nombre": "FRASCO ESCARCHA GLITTER 6 COLORES 80 GRS ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 2,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 475,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 480,
+  "fields":{
    "nombre": "FRASCO ESCARCHA GRLITTER 6 COLORES 80 GRS ART%CRAFT",
    "categoria": "BAZAR",
    "stock": 2,
    "precio_coste": 2600,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 476,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 481,
+  "fields":{
    "nombre": "FUNDAS TRANSPARENTE OFICIO 100UN FULTONS",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2670,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 477,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 482,
+  "fields":{
    "nombre": "GATITOS PAÑOLENCI ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 420,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 478,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 483,
+  "fields":{
    "nombre": "GLOBO LISO N°9 AMARILLO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 479,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 484,
+  "fields":{
    "nombre": "GLOBO LISO N°9 AZUL 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 480,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 485,
+  "fields":{
    "nombre": "GLOBO LISO N°9 BLANCO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 481,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 486,
+  "fields":{
    "nombre": "GLOBO LISO N°9 CELESTE 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 482,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 487,
+  "fields":{
    "nombre": "GLOBO LISO N°9 CELESTE-BLANCO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 483,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 488,
+  "fields":{
    "nombre": "GLOBO LISO N°9 LILA 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 484,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 489,
+  "fields":{
    "nombre": "GLOBO LISO N°9 ROJO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 485,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 490,
+  "fields":{
    "nombre": "GLOBO LISO N°9 ROSADO-BLANCO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 486,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 491,
+  "fields":{
    "nombre": "GLOBO LISO N°9 VERDE LIMA 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 487,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 492,
+  "fields":{
    "nombre": "GLOBO METALIZADO N°9 NEGRO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 488,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 493,
+  "fields":{
    "nombre": "GLOBO METALIZADO N°9 PLATEADO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 489,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 494,
+  "fields":{
    "nombre": "GLOBO N°9 METALIZADO DORADO 25 UNIDADES GLAM",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 530,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 490,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 495,
+  "fields":{
    "nombre": "LAMINAS PARA TERMOLAMINAR JUMBO 80X115MM 175 MICRONES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 3130,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 491,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 496,
+  "fields":{
    "nombre": "LAPICES 12 COLORES METALICOS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 2030,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 492,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 497,
+  "fields":{
    "nombre": "LAPICES 12 COLORES METALICOS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 2030,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 493,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 498,
+  "fields":{
    "nombre": "LAPICES 12 COLORES PASTEL LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1180,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 494,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 499,
+  "fields":{
    "nombre": "LAPICES COLORES 12+2 GRAFITO PROARTE",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 495,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 500,
+  "fields":{
    "nombre": "LAPICES COLORES 12+2 GRAFITO PROARTE",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 1000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 496,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 501,
+  "fields":{
    "nombre": "LAPICES DE 12 COLORES 3.0 GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 1510,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 497,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 502,
+  "fields":{
    "nombre": "LAPICES GRAFITO TRIANGULAR HB N°2 PROARTE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 498,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 503,
+  "fields":{
    "nombre": "LAPICES GRAFITO TRIANGULAR HB N°2 PROARTE",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 1400,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 499,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 504,
+  "fields":{
    "nombre": "LAPIZ GRAFITO HEXAGONAL HB N°2 - 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1200,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 500,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 505,
+  "fields":{
    "nombre": "LAPIZ GRAFITO HEXAGONAL HB N°2 – 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1200,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 501,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 506,
+  "fields":{
    "nombre": "LAPIZ GRAFITO TRIANGULAR JUMBO 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 1310,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 502,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 507,
+  "fields":{
    "nombre": "LAPIZ GRAFITO TRIANGULAR JUMBO 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 1310,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 503,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 508,
+  "fields":{
    "nombre": "LAPIZ TINTA GEL 0.7MM AZUL 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 7140,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 504,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 509,
+  "fields":{
    "nombre": "LIBRO DE ACTAS 100 HOJAS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 3910,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 505,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 510,
+  "fields":{
    "nombre": "LIBRO DE ASISTENCIA 100 HOJAS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 3910,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 506,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 511,
+  "fields":{
    "nombre": "LIBRO DE COMPRA Y VENTAS 24 HOJAS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1370,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 507,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 512,
+  "fields":{
    "nombre": "LIBRO DE CORRESPONDENCIA 100 HOJAS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 2660,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 508,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 513,
+  "fields":{
    "nombre": "LIBRO MANIFOLD TRIPLICADO 50 HJS LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 5480,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 509,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 514,
+  "fields":{
    "nombre": "MALETIN CON FUELLE PLASTICO NEGRO LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 5480,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 510,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 515,
+  "fields":{
    "nombre": "MALETIN CON FUELLE PLASTICO NEGRO LAVORO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 5480,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 511,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 516,
+  "fields":{
    "nombre": "MARCADOR OLEO BLANCO 12 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11500,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 512,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 517,
+  "fields":{
    "nombre": "MEZCLADOR 4 DIVISIONES 1 UNIDAD FULTON",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 125,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 513,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 518,
+  "fields":{
    "nombre": "MEZCLADOR 6 DIVISIONES 1 UNIDAD FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 180,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 514,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 519,
+  "fields":{
    "nombre": "MI PRIMER KIT ESCOLAR DOMS",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 340,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 515,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 520,
+  "fields":{
    "nombre": "PACK DE VARIEDAD DE DIDACTICOS",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 50000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 516,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 521,
+  "fields":{
    "nombre": "PAPEL ADHESIVO GLOSSY 180 GRAMOS OFICIO 100 HOJAS DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 8490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 517,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 522,
+  "fields":{
    "nombre": "PAPEL ADHESIVO GLOSSY 180 GRAMOS OFICIO 100 HOJAS DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 8490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 518,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 523,
+  "fields":{
    "nombre": "PAPEL FOTOGRAFICO 180 GRAMOS GLOSSY CARTA 20 HOJAS DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 519,
-  "fields": {
-   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 5450,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 520,
-  "fields": {
-   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 5450,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 521,
-  "fields": {
-   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 2,
-   "precio_coste": 5450,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 522,
-  "fields": {
-   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 2,
-   "precio_coste": 5450,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
-  "pk": 523,
-  "fields": {
-   "nombre": "PEGAMENTO EN BARRA 36 GRAMOS 12 UNIDADES PROARTE",
-   "categoria": "ESCOLAR",
-   "stock": 1,
-   "precio_coste": 9540,
-   "descripcion": "",
-   "precio": 0
-  }
- },
- {
-  "model": "aym.producto",
+   "model":"aym.producto",
   "pk": 524,
-  "fields": {
+  "fields":{
+   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 5450,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 525,
+  "fields":{
+   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 5450,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 526,
+  "fields":{
+   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
+   "categoria": "ESCOLAR",
+   "stock": 2,
+   "precio_coste": 5450,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 527,
+  "fields":{
+   "nombre": "PEGAMENTO EN BARRA 21 GRAMOS 12 UNIDADES PROARTE",
+   "categoria": "ESCOLAR",
+   "stock": 2,
+   "precio_coste": 5450,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 528,
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA 36 GRAMOS 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 9540,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 525,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 529,
+  "fields":{
+   "nombre": "PEGAMENTO EN BARRA 36 GRAMOS 12 UNIDADES PROARTE",
+   "categoria": "ESCOLAR",
+   "stock": 1,
+   "precio_coste": 9540,
+   "descripcion": "",
+   "precio": 0
+    }
+ },
+ {
+   "model":"aym.producto",
+  "pk": 530,
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA XL 115GRS 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 13100,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 526,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 531,
+  "fields":{
    "nombre": "PEGAMENTO EN BARRA XL 115GRS 6 UNIDADES LAVORO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 13100,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 527,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 532,
+  "fields":{
    "nombre": "PINCEL N°1 PELO CAMELLO 12 UNIDADES MANGO DE MADERA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1510,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 528,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 533,
+  "fields":{
    "nombre": "PINCEL N°10 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1460,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 529,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 534,
+  "fields":{
    "nombre": "PINCEL N°11 PELO CAMELLO 6 UNIDADES MANGO DE MADERA ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1500,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 530,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 535,
+  "fields":{
    "nombre": "PINCEL N°12 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1740,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 531,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 536,
+  "fields":{
    "nombre": "PINCEL N°12 PELO CAMELLO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1560,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 532,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 537,
+  "fields":{
    "nombre": "PINCEL N°14 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2030,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 533,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 538,
+  "fields":{
    "nombre": "PINCEL N°16 ESPATULADO 6 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2160,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 534,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 539,
+  "fields":{
    "nombre": "PINCEL N°2 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2060,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 535,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 540,
+  "fields":{
    "nombre": "PINCEL N°2 ESPATULADO 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2240,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 536,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 541,
+  "fields":{
    "nombre": "PINCEL N°2 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1790,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 537,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 542,
+  "fields":{
    "nombre": "PINCEL N°3 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1890,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 538,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 543,
+  "fields":{
    "nombre": "PINCEL N°4 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2360,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 539,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 544,
+  "fields":{
    "nombre": "PINCEL N°4 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1980,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 540,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 545,
+  "fields":{
    "nombre": "PINCEL N°5 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2170,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 541,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 546,
+  "fields":{
    "nombre": "PINCEL N°6 ESPATULADO 12 UNIDADES PROARTE",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2900,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 542,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 547,
+  "fields":{
    "nombre": "PINCEL N°6 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2260,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 543,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 548,
+  "fields":{
    "nombre": "PINCEL N°7 PELO CAMELLO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2360,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 544,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 549,
+  "fields":{
    "nombre": "PINCEL N°8 ESPATULADO 12 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2740,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 545,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 550,
+  "fields":{
    "nombre": "PINCEL N°9 PELO CAMELLO 6 UNIDADES MANGO DE MADERA FULTON'S",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1320,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 546,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 551,
+  "fields":{
    "nombre": "PLASTICINA REDONDA 12 COLORES ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 8,
    "precio_coste": 510,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 547,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 552,
+  "fields":{
    "nombre": "PLATO CARTON REDONDO 18CM BLANCO 20UND GLAM",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 870,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 548,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 553,
+  "fields":{
    "nombre": "PLATO PLASTICO 18 CM BLANCO 10 UNIDADES GLAM",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 780,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 549,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 554,
+  "fields":{
    "nombre": "RAFIA 10GRS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 550,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 555,
+  "fields":{
    "nombre": "ROLLO ELASTICO NEGRO 2.5CM ANCHO-28 METROS LARGO",
    "categoria": "BAZAR",
    "stock": 1,
    "precio_coste": 2990,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 551,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 556,
+  "fields":{
    "nombre": "SERVILLETA AZUL 20 UNIDADES GLAM",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 610,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 552,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 557,
+  "fields":{
    "nombre": "SERVILLETA LAVANDA 20 UNIDADES GLAM",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 610,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 553,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 558,
+  "fields":{
    "nombre": "SET 170 CARTULINA PINTADA COLORES SURTIDO 53X77 PAREDONES",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 33380,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 554,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 559,
+  "fields":{
    "nombre": "SET 3 AGUJAS PLASTICAS PARA LANA 7CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 2900,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 555,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 560,
+  "fields":{
    "nombre": "SET 3 AGUJAS PLASTICAS PARA LANA 7CM ART&CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 580,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 556,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 561,
+  "fields":{
    "nombre": "SET BILLETES Y MONEDAS DE CHILE ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 6000,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 557,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 562,
+  "fields":{
    "nombre": "SET BILLETES Y MONEDAS DE CHILE ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 400,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 558,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 563,
+  "fields":{
    "nombre": "SET DE ESPONJAS 20UND",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 2380,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 559,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 564,
+  "fields":{
    "nombre": "SET DE FLORES NATURALES 4 UNIDADES ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 300,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 560,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 565,
+  "fields":{
    "nombre": "SET DE MINI TOALLAS HUMEDA 4UND SURTIDOS",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 790,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 561,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 566,
+  "fields":{
    "nombre": "SET DE PINCELES REDONDOS 5 UNIDADES DOMS",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1160,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 562,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 567,
+  "fields":{
    "nombre": "SET DE PINCELES REDONDOS 5 UNIDADES DOMS",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1160,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 563,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 568,
+  "fields":{
    "nombre": "SET ESPEJITOS SURTIDOS ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 710,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 564,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 569,
+  "fields":{
    "nombre": "SET ESPONJA VIRUTILLA",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 690,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 565,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 570,
+  "fields":{
    "nombre": "SET GANCHO CABEZA PLASTICA ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 740,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 566,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 571,
+  "fields":{
    "nombre": "SET LANA 5 COLORES BASICOS 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 4350,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 567,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 572,
+  "fields":{
    "nombre": "SET LANA 5 COLORES BASICOS 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 870,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 568,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 573,
+  "fields":{
    "nombre": "SET LANAS 5 COLORES 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 569,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 574,
+  "fields":{
    "nombre": "SET LANAS 5 COLORES 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 570,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 575,
+  "fields":{
    "nombre": "SET LANAS 5 COLORES 1 AGUJA PLAST ART & CRAFT",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 571,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 576,
+  "fields":{
    "nombre": "SET LANAS 5 COLORES 1 AGUJA PLAST ART & CRAFT -",
    "categoria": "BAZAR",
    "stock": 5,
    "precio_coste": 4300,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 572,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 577,
+  "fields":{
    "nombre": "SET LIJA ESCOLAR ARTE TOP",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 360,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 573,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 578,
+  "fields":{
    "nombre": "SET MINAS REDONDOS 5 UNIDADES ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 860,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 574,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 579,
+  "fields":{
    "nombre": "SOBRES PARA TERMOLAMINAR OFICIO 23X34 CMS 125 MICRONES 100 UNIDADES DIAZOL",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 11920,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 575,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 580,
+  "fields":{
    "nombre": "TARJETA KARDEX 12.5X20.5CMS 25 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1080,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 576,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 581,
+  "fields":{
    "nombre": "TARJETA KARDEX 12.5X20:5CMS 25 UNIDADES FULTONS",
    "categoria": "ESCOLAR",
    "stock": 5,
    "precio_coste": 1080,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 577,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 582,
+  "fields":{
    "nombre": "TEMPERA 250ML BLANCO ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1540,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 578,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 583,
+  "fields":{
    "nombre": "TEMPERA AMARILLA 250ML GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 579,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 584,
+  "fields":{
    "nombre": "TEMPERA AZUL 250ML GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 580,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 585,
+  "fields":{
    "nombre": "TEMPERA CAFE PARDO 250ML PROARTE",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1250,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 581,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 586,
+  "fields":{
    "nombre": "TEMPERA METALICA DORADA 250ML GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 1,
    "precio_coste": 1490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 582,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 587,
+  "fields":{
    "nombre": "TEMPERA NARANJA 250ML PROARTE",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1250,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 583,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 588,
+  "fields":{
    "nombre": "TEMPERA PIEL 120ML PROARTE",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 700,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 584,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 589,
+  "fields":{
    "nombre": "TEMPERA VERDE 250ML GIOTTO",
    "categoria": "ESCOLAR",
    "stock": 2,
    "precio_coste": 1490,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 585,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 590,
+  "fields":{
    "nombre": "TIJERA ESCOLAR 13CMS BLISTER FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 5500,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 586,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 591,
+  "fields":{
    "nombre": "TIJERA ESCOLAR 13CMS BLISTER FULTONS",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 550,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 587,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 592,
+  "fields":{
    "nombre": "TIJERA ESCOLAR 13CMS NEGRO PUNTA ROMA FULTONS",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 5700,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 588,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 593,
+  "fields":{
    "nombre": "TIJERA ESCOLAR 13CMS NEGRO PUNTA ROMA FULTONS",
    "categoria": "ESCOLAR",
    "stock": 15,
    "precio_coste": 380,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 589,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 594,
+  "fields":{
    "nombre": "TIJERA ESCOLAR CON CLIP LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 970,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 590,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 595,
+  "fields":{
    "nombre": "TIJERA ESCOLAR CON CLIP LAVORO",
    "categoria": "ESCOLAR",
    "stock": 6,
    "precio_coste": 970,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 591,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 596,
+  "fields":{
    "nombre": "TIJERA ESCOLAR MANGO NARANJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 540,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 592,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 597,
+  "fields":{
    "nombre": "TIJERA ESCOLAR MANGO NARANJA PROARTE",
    "categoria": "ESCOLAR",
    "stock": 10,
    "precio_coste": 540,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 593,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 598,
+  "fields":{
    "nombre": "TINTA PARA TAMPON 24ML AZUL FULTONS",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 380,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 594,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 599,
+  "fields":{
    "nombre": "TINTA PARA TAMPON 24ML NEGRA FULTONS",
    "categoria": "ESCOLAR",
    "stock": 4,
    "precio_coste": 390,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 595,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 600,
+  "fields":{
    "nombre": "TIZA JUMBO 6 COLORES FLUOR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1130,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 596,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 601,
+  "fields":{
    "nombre": "TIZA JUMBO 6 COLORES FLUOR ART&CRAFT",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1300,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 597,
-  "fields": {
+   "model":"aym.producto",
+  "pk": 602,
+  "fields":{
    "nombre": "TRAPERO MULTIUSO LIMON 10PCS VIVIDI",
    "categoria": "ESCOLAR",
    "stock": 3,
    "precio_coste": 1060,
    "descripcion": "",
    "precio": 0
-  }
+    }
  },
  {
-  "model": "aym.producto",
-  "pk": 598,
-  "fields": {
-   "nombre": "TARRO KRYZPO 37G",
-   "categoria": "COMESTIBLE",
-   "stock": 3,
-   "precio_coste": 1000,
-   "descripcion": "",
-   "precio": 0
-  }
+    "model":"aym.producto",
+    "pk": 603,
+    "fields":{
+    "nombre": "TARRO KRYZPO 37G",
+    "categoria": "COMESTIBLE",
+    "stock": 3,
+    "precio_coste": 1000,
+    "descripcion": "",
+    "precio": 0
+      }
  }
 ]

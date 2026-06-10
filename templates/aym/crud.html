@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyM CRUD de Productos</title>
+    <link rel="stylesheet" href="{% static 'crud.css' %}">
+</head>
+<body>
+    <h1>CRUD de Productos</h1>
+
+    {% if message %}
+        <div class="message {{ message_type }}">{{ message }}</div>
+    {% endif %}
+
+    <div class="crud-container">
+        <section class="crud-panel">
+            <h2>{% if form_operation == 'update' %}Editar producto{% else %}Agregar producto{% endif %}</h2>
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ form.pk }}
+                <input type="hidden" name="operation" value="{{ form_operation }}">
+                <div class="field-row">
+                    {{ form.nombre.label_tag }}
+                    {{ form.nombre }}
+                    {{ form.nombre.errors }}
+                </div>
+                <div class="field-row">
+                    {{ form.descripcion.label_tag }}
+                    {{ form.descripcion }}
+                    {{ form.descripcion.errors }}
+                </div>
+                <div class="field-row">
+                    {{ form.precio_coste.label_tag }}
+                    {{ form.precio_coste }}
+                    {{ form.precio_coste.errors }}
+                </div>
+                <div class="field-row">
+                    {{ form.precio.label_tag }}
+                    {{ form.precio }}
+                    {{ form.precio.errors }}
+                </div>
+                <div class="field-row">
+                    {{ form.stock.label_tag }}
+                    {{ form.stock }}
+                    {{ form.stock.errors }}
+                </div>
+                <div class="field-row">
+                    {{ form.categoria.label_tag }}
+                    {{ form.categoria }}
+                    {{ form.categoria.errors }}
+                </div>
+                <button type="submit">{% if form_operation == 'update' %}Guardar cambios{% else %}Agregar producto{% endif %}</button>
+            </form>
+            {% if form_operation == 'update' %}
+                <p><a href="{% url 'crud' %}">Cancelar edición</a></p>
+            {% endif %}
+        </section>
+
+        <section class="crud-panel">
+            <h2>Lista de productos</h2>
+            {% if products %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Stock</th>
+                            <th>Precio coste</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <td>{{ product.pk }}</td>
+                                <td>{{ product.nombre }}</td>
+                                <td>{{ product.categoria }}</td>
+                                <td>{{ product.stock }}</td>
+                                <td>{{ product.precio_coste }}</td>
+                                <td>{{ product.precio }}</td>
+                                <td>{{ product.descripcion }}</td>
+                                <td class="actions">
+                                    <a href="{% url 'crud' %}?edit={{ product.pk }}">Editar</a>
+                                    <form method="post" action="" onsubmit="return confirm('¿Eliminar este producto?');">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="operation" value="delete">
+                                        <input type="hidden" name="pk" value="{{ product.pk }}">
+                                        <button type="submit">Eliminar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p>No hay productos disponibles.</p>
+            {% endif %}
+        </section>
+    </div>
+</body>
+</html>

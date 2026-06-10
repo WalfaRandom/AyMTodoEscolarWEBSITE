@@ -1,0 +1,52 @@
+.crud-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 32px; 
+}
+
+.crud-panel { 
+    flex: 1 1 320px; 
+    padding: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    background: #fff; 
+}
+
+.crud-panel h2 { 
+    margin-top: 0; 
+}
+
+.message.success { 
+    color: #1a7f37; 
+}
+
+.message.error { 
+    color: #b91c1c; 
+}
+
+.actions { 
+    display: flex; 
+    gap: 8px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.actions form { 
+    display: inline; 
+    margin: 0; 
+}
+
+.field-row { 
+    margin-bottom: 12px; 
+}
+
+.field-row label { 
+    display: block; 
+    margin-bottom: 4px; 
+    font-weight: 600; 
+}
+
+.field-row input, .field-row textarea { 
+    width: 100%; 
+    box-sizing: border-box; 
+}

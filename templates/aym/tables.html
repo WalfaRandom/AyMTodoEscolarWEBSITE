@@ -10,6 +10,31 @@
 <body>
     <h1>Productos</h1>
 
+    <form method="get" action="">
+        <label for="categoria">Filtrar por categoría:</label>
+        <select name="categoria" id="categoria">
+            <option value="" {% if not selected_category %}selected{% endif %}>Todas las categorías</option>
+            {% for categoria in categories %}
+                <option value="{{ categoria }}" {% if categoria == selected_category %}selected{% endif %}>{{ categoria }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="search">Buscar por nombre:</label>
+        <input type="text" id="search" name="search" value="{{ search_query }}" placeholder="Ingrese nombre" />
+
+        <label for="sort">Ordenar por:</label>
+        <select name="sort" id="sort">
+            <option value="" {% if not sort_option %}selected{% endif %}>Sin orden</option>
+            <option value="az" {% if sort_option == 'az' %}selected{% endif %}>A-Z</option>
+            <option value="za" {% if sort_option == 'za' %}selected{% endif %}>Z-A</option>
+            <option value="price_asc" {% if sort_option == 'price_asc' %}selected{% endif %}>Ascending Price</option>
+            <option value="price_desc" {% if sort_option == 'price_desc' %}selected{% endif %}>Descending Price</option>
+            <option value="stock" {% if sort_option == 'stock' %}selected{% endif %}>Stock</option>
+        </select>
+
+        <button type="submit">Aplicar</button>
+    </form>
+
     {% if products %}
         <table>
             <thead>

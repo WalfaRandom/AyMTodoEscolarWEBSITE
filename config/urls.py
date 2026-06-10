@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from aym.views import index, login, tables
+from aym.views import index, login, tables, crud
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('login/', login),
     path('tables/', tables),
+    path('tables/crud/', crud, name='crud'),
 ]
