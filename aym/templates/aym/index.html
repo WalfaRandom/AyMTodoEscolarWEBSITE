@@ -70,7 +70,8 @@
         <td>
             {{ Producto.stock }}
 
-            {% if Producto.stock_bajo %}
+            {% if Producto.stock <= 5 %}
+
                 <span style="color:red; font-weight:bold;">
                     (¡Stock Bajo!)
                 </span>
