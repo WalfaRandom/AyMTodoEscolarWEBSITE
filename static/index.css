@@ -29,6 +29,19 @@ body {
     transition: 0.3s;
 }
 
+.tablesbutton {
+    background-color: #a1a1a1;
+    border: none;
+    transition: 0.3s;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.tablesbutton:hover {
+    background-color: #45a049;
+    transition: 0.3s;
+}
+
 .logo {
     display: block;
     margin-left: auto;
