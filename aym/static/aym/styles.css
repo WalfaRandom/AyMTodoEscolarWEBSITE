@@ -1,8 +1,18 @@
 body{
-    background-color: rgb(224, 172, 172);
+    background-color: cadetblue;
 }
 
 table {
     text-align: center;
 }
 
+
+#borrar {
+    color: red ;
+}
+button a{
+    text-decoration: none;
+}
+nav {
+    text-decoration: none;
+}

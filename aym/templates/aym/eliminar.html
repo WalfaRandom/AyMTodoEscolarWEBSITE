@@ -1,0 +1,13 @@
+<html lang="es">
+<head><title>Eliminar Producto</title></head>
+<body>
+    <h1>¿Está seguro de eliminar el producto: "{{ producto.nombre }}"?</h1>
+    <p style="color: red;">Esta acción es irreversible y removerá el artículo de la bodega.</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" style="background-color: red; color: white;">Sí, Confirmar Eliminación</button>
+        <a href="{% url 'lista_prods' %}">Cancelar y Volver</a>
+    </form>
+</body>
+</html>
