@@ -1,19 +1,189 @@
-body{
-    background-color: cadetblue;
+/* --- Estilos Generales --- */
+body {
+    background-color: #f0f8ff; /* Azul muy claro y limpio (AliceBlue) */
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
 }
 
+/* --- Títulos y Textos --- */
+h1 {
+    color: #0d253f; /* Azul marino oscuro */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+/* --- Barra de Navegación --- */
+nav {
+    background-color: #1e3a8a; /* Azul inspirado en tu logo */
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav strong {
+    color: white;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #ffd700; /* Dorado para los enlaces */
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* --- Botón Crear Producto Principal --- */
+.contenedor-crear {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-end; /* Alineado a la derecha */
+    margin-bottom: 15px;
+}
+
+.btn-crear {
+    background-color: #ffd700; /* Dorado brillante del logo */
+    color: #0d253f; /* Texto azul marino para contraste */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: 2px solid #0d253f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-crear:hover {
+    background-color: #e5c100; /* Dorado más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Controles (Búsqueda y Orden) --- */
+form {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    border: 2px solid #1e3a8a;
+    border-radius: 4px;
+    padding: 8px !important;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #ffd700;
+}
+
+button, form button[type="submit"] {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover, form button[type="submit"]:hover {
+    background-color: #0d253f;
+}
+
+/* Estilo para los enlaces de ordenar */
+div[style*="font-size: 14px;"] a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div[style*="font-size: 14px;"] a:hover {
+    text-decoration: underline;
+}
+
+/* --- Tabla de Productos --- */
 table {
-    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse; /* Bordes simples y unidos */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    margin-top: 20px;
+    border: 1px solid #ddd;
 }
 
-
-#borrar {
-    color: red ;
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
-button a{
+
+th {
+    background-color: #1e3a8a; /* Encabezado azul */
+    color: #ffd700; /* Texto dorado */
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:hover {
+    background-color: #f8fafc; /* Color muy suave al pasar el ratón por la fila */
+}
+
+/* --- Botones de Acción (Editar y Borrar) --- */
+td button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+td button a {
+    color: white;
     text-decoration: none;
 }
-a{
-    text-decoration: none;
 
+/* Botón Editar */
+td button:first-child {
+    background-color: #3b82f6; /* Azul claro */
+}
+
+td button:first-child:hover {
+    background-color: #2563eb;
+}
+
+/* Botón Borrar */
+td button:has(#borrar) {
+    background-color: #dc2626; /* Rojo */
+}
+
+td button:has(#borrar):hover {
+    background-color: #b91c1c;
+}
+
+/* --- Alerta de Stock Bajo --- */
+p[style*="color: red;"] {
+    color: #dc2626 !important;
+    font-weight: bold;
+    background-color: #fee2e2;
+    padding: 4px 8px !important;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0;
 }
