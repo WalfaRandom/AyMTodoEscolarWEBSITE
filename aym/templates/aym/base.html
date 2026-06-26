@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AyM Todo Escolar - Inventario</title>
+    <link rel="stylesheet" href="{% static 'aym/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'aym/base.css' %}" />
+  </head>
+  <body>
+    <header>
+        <h1 class="main-title">AyM Todo Escolar</h1> 
+      <img
+        src="{% static 'aym/logo.png' %}"
+        alt="logo"
+        width="200px"
+        height="200px"
+      />      
+    </header>
+    <main>{% block content %} {% endblock %}</main>
+    <footer>
+      <p>Todos los derechos reservados 2026 - ®Clase de Backend</p>
+    </footer>
+  </body>
+</html>

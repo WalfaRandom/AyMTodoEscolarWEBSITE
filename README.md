@@ -32,7 +32,12 @@
 
 ## ⚠️Prioridades
 - [x] Pedir listado de productos 
-- [ ] Categorizar (de forma general)
-- [ ] Base de datos
+- [x] Categorizar (de forma general)
+- [x] Base de datos
+- [x] Búsqueda por nombre
+- [ ] Usar templates
+- [ ] Mejorar diseño
+- [ ] Alojar Server &rarr; **PythonAnywhere**
+- [ ] Diseñar Dashboard con gráficos
 
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyM - Eliminar Producto</title>
+</head>
+<body>
+    <h1>¿Está seguro de eliminar el producto: "{{ producto.nombre }}"?</h1>
+    <h2 style="color: red;"> Esta acción es irreversible y removerá el artículo de la bodega.</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" style="background-color: red; color: white;">Sí, Confirmar Eliminación</button>
+        <a href="{% url 'lista_prods' %}">Cancelar y Volver</a>
+    </form>
+</body>
+</html>

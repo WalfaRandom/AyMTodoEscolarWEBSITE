@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 
 # Definimos la estructura de un producto 
 
@@ -9,11 +10,12 @@ class Producto(models.Model):
         ('BAZAR', 'Regalos/Bazar'),
         ('ALIMENTO', 'Colaciones/Alimentos'),
     ]
-
     nombre = models.CharField(max_length=100)
-    descripcion = models.TextField(blank=True, null=True)
-    precio = models.IntegerField()
-    stock = models.IntegerField()
+    descripcion = models.TextField(blank=True, default="")
+    precio = models.IntegerField(default =0, blank=True)
+    stock = models.IntegerField(validators=[MinValueValidator(0, message="El stock no puede ser inferior a 0, intente otra vez")])
+    # Probando nuevos campos
+    precio_coste = models.IntegerField(default=0, blank=True)
     
     # Nuevo campo con opciones predefinidas
     categoria = models.CharField(
@@ -21,6 +23,7 @@ class Producto(models.Model):
         choices=OPCIONES_CATEGORIA,
         default='ESCOLAR'
     )
+
 
     def __str__(self):
         return f"{self.nombre} ({self.get_categoria_display()})"

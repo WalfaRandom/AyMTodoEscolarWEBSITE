@@ -1,0 +1,23 @@
+[
+  {
+    "model": "aym.producto",
+    "pk": 2,
+    "fields": {
+      "nombre": "Leche Chocolate",
+      "descripcion": "Leche en caja de chocolate",
+      "precio": 500,
+      "stock": 24,
+      "categoria": "ALIMENTO",
+      "precio_costo": 320
+    }
+  }
+]
+
+resetear la base de datos a cero
+Como estamos en etapa de desarrollo y aprendizaje, puedes "limpiar el historial" y resetear el contador para que empiece desde el 1.
+
+El comando de truncado (Desde la terminal)
+Django tiene un comando específico para vaciar las tablas de una app y reiniciar sus contadores automáticos a cero.
+
+python manage.py flush
+Qué hace: Este comando borrará absolutamente todos los datos de la base de datos (incluyendo los productos de prueba y el superusuario que creamos), pero dejará intacta la estructura de las tablas. Al terminar, tu base de datos estará como nueva y el próximo producto que crees tendrá el ID 1.

@@ -1,0 +1,188 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 strong {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .main-container{
+        background-color: lightgray;
+      }
+      
+    </style>
+  </head>
+  <body class="bg-primary vh-100 m-0 p-0">
+    <!-- SIDEBAR -->
+    <div class="container-fluid p-0 border border-black rounded position-sticky">
+      <div class="row g-0 center">        
+        <!-- SIDEBAR -->
+        <div class="col-3 border border-black p-1 rounded bg-warning position-sticky">
+          <img
+            class="border border-black d-block mx-auto"
+            src="{% static 'aym/logo.png' %}"
+            alt="logo"
+            width="200px"
+            height="200px"
+          />
+          <div class="list-group mt-4 border border-black position-sticky">
+            <a
+              href="?cat= "
+              class="list-group-item list-group-item-action active text-black text-center"
+              >Todos</a
+            >
+            <a
+              href="?cat=ESCOLAR"
+              class="list-group-item list-group-item-action text-black text-center"
+              >Útiles Escolares</a
+            >
+            <a
+              href="?cat=ALIMENTO"
+              class="list-group-item list-group-item-action text-black text-center"
+              >Colaciones</a
+            >
+            <a
+              href="?cat=BAZAR"
+              class="list-group-item list-group-item-action text-black text-center"
+              >Regalos / Bazar</a
+            >
+          </div>
+        </div>
+        <!-- A&M TODO ESCOLAR - INVENTARIO -->
+        <div class="col-9 main-container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="ms-1 text-center"><strong>A&M Todo Escolar </strong>- Inventario</h1>
+            </div>
+            <!-- Ordenar por -->
+            <div class="col-12">
+                
+
+              <nav class="navbar navbar-expand-lg bg-body-tertiary m-1 py-1">
+                <div class="container-fluid text-center">
+                  <a class="navbar-brand" href="#">Ordernar Por:</a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nombre (A-Z) |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nombre (Z-A) |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Precio: Menor a Mayor |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Precio: Mayor a Menor</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+                <!-- Ordenar por -->
+
+            </div>            
+            <!-- Busqueda por nombre - boton - limpiar filtro -->
+            <div class="col-12">              
+                <nav class="navbar bg-secondary m-1 py-1">
+                    <div class="col-8">
+                    <form class="container-fluid">
+                        <input
+                        class="input-search form-control me-1"
+                        type="search"
+                        placeholder="Buscar producto por nombre"
+                        type="text"
+                        name="q"
+                        value="{{ busqueda_actual }}"
+                        placeholder="Buscar producto por nombre..."
+                        />
+                    </form>
+                    </div>
+                    <div class="col-1">
+                    <input class="btn btn-primary" type="submit" value="Submit" />
+                    </div>
+                    <div class="col-3 text-center">
+                    <a class="nav-link text-white" href="#">Limpiar filtros</a>
+                    </div>
+                    <!-- Busqueda por nombre - boton - limpiar filtro -->
+                </nav>              
+            </div>
+        <div class="col-12 mt-3 px-3 table-responsive">
+            <table class="table align-middle table-bordered border-black table-hover">
+                    <tr>
+                        <th class="w-75 text-center">Nombre</th>
+                        <th class="text-nowrap text-center">Precio</th>
+                        <th class="w-50 text-nowrap text-center">Stock</th>                        
+                        <th class="text-nowrap text-center">Categoría</th>
+                        <th class="text-nowrap text-center">Acciones</th>
+                    </tr>
+                    {% for prod in lista %}
+                    <tr>
+                        <td>{{ prod.nombre }}</td>
+                        <td>
+                        {% if prod.precio > 0 %} ${{ prod.precio }} {% else %} No hay precio
+                        disponible {% endif %}
+                        </td>
+                        <td>
+                        {% if prod.stock <= 5 %}
+                        <p class="text-danger">{{ prod.stock }} (¡Stock Bajo!)</p>
+                        {% else %} {{ prod.stock }} {% endif %}
+                        </td>                        
+                        <td>{{ prod.get_categoria_display }}</td>
+                        <td>
+                            <div class="d-inline-flex">                            
+                                <button class=" btn rounded-2">
+                                    <a class="btn btn-warning" href="{% url 'editar_prod' prod.id %}">Editar</a>
+                                </button>
+                                <button class=" btn rounded-2 text-black">
+                                    <a class="btn btn-danger" href="{% url 'eliminar_prod' prod.id %}">Eliminar</a>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6">
+                        <strong>No hay productos registrados en el inventario.</strong>
+                        </td>
+                    </tr>
+                    {% endfor %}
+            </table>
+        </div>
+            
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
