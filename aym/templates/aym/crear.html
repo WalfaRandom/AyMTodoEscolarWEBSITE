@@ -1,25 +1,35 @@
+{% load static %}
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AyM - Añadir Producto</title>
+    <link rel="stylesheet" href="{% static 'aym/C_Estyles.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Geologica:wght,CRSV@100..900,0&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <img src="{% static 'aym/A&M.png' %}" alt="LOGO" width="250px">
+    
     <h1>Registrar Nuevo Artículo</h1>
     <p>Complete los datos para incorporar el producto al inventario oficial:</p>
 
+    
     <form method="POST">
       {% csrf_token %}
 
-      <table>
+      <table class="">
         {{ form.as_table }}
       </table>
 
       <br />
-      <button type="submit">Guardar Producto en Bodega</button>
+      <button type="submit" class="C_Evolver">Guardar Producto en Bodega</button>
     </form>
 
     <br />
+    
+    <div>
     <a href="{% url 'lista_prods' %}">Volver al Inventario Total</a>
+    </div>
   </body>
 </html>

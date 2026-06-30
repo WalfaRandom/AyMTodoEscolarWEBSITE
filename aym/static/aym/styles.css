@@ -7,9 +7,9 @@ img
 position:absolute;
 left:50px;
 top:-35px;
-z-index:1; 
+z-index:1;
 }
-h1 {
+.indeh1{
   text-align: center;
   font-size: 57px; 
 }
@@ -22,10 +22,19 @@ section{
 }
 nav {
   text-align: center;
+
 }
-nav a{
+.FiltrarCate{
   text-decoration: none;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 4px;
+  color: black;
 } 
+.FiltrarCate:hover{
+  background-color: rgb(254, 254, 254);
+  transition: 0.5s;
+}
 .busqueda{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -46,13 +55,17 @@ nav a{
   text-decoration: none;
 
 }
+.filtro:hover{
+  color: rgb(254, 254, 254);
+  transition: 0.5s;
+}
 .orden{
   margin-bottom: 20px;
   font-size: 14px;
   text-align: center;
 }
 .orden a:hover{
-  background-color: rgb(198, 198, 198);
+  background-color: rgb(254, 254, 254); 
   transition: 0.5s;
 }
 .orden a{
@@ -100,7 +113,7 @@ p {
 }
 .btnEdi a{
   text-decoration: none;
-  color: rgb(67, 0, 71);
+  color: rgb(6, 47, 255);
 }
 
 .btnEli{
@@ -114,7 +127,7 @@ p {
   
 }
 .btnEdi:hover{
-  background-color: rgb(151, 161, 252);
+  background-color: rgb(214, 214, 214);
   transition: 0.5s;
 }
 

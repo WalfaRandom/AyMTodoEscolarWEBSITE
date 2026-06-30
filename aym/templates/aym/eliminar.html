@@ -1,13 +1,20 @@
+{% load static %}
 <html lang="es">
-<head><title>Eliminar Producto</title></head>
+<head>
+    <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="{% static 'aym/C_Estyles.css' %}" />
+</head>
 <body>
-    <h1>¿Está seguro de eliminar el producto: "{{ producto.nombre }}"?</h1>
-    <p style="color: red;">Esta acción es irreversible y removerá el artículo de la bodega.</p>
+    
+    <div class="eliminarF">
+    <h1 >¿Está seguro de eliminar el producto: "{{ producto.nombre }}"?</h1>
+    </div>
+    <p style="color: red; font-size: 35px;" ><strong>Esta acción es irreversible y removerá el artículo de la bodega.</strong></p>
 
     <form method="POST">
         {% csrf_token %}
-        <button type="submit" style="background-color: red; color: white;">Sí, Confirmar Eliminación</button>
-        <a href="{% url 'lista_prods' %}">Cancelar y Volver</a>
+        <button type="submit" class="btnEliminar">Sí, Confirmar Eliminación</button>
+        <a href="{% url 'lista_prods' %}" class="btnE_V">Cancelar y Volver</a>
     </form>
 </body>
 </html>

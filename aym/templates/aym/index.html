@@ -15,15 +15,15 @@
     <div class="headerCont">
     <header>
     <img src="{% static 'aym/A&M.png' %}" alt="LOGO" width="250px">
-      <h1>Inventario A&M</h1>
+      <h1 class="indeh1">Inventario A&M</h1>
 
     <nav>
       <strong>Filtrar por categoría:</strong>
-      <a href="/aym/productos/">Todos</a> |
-      <a href="/aym/productos/?cat=ESCOLAR">Útiles Escolares</a> |
-      <a href="/aym/productos/?cat=ALIMENTO">Colaciones</a> |
-      <a href="/aym/productos/?cat=BAZAR">Bazar</a> |
-      <a href="{% url 'crear_prod' %}">Crear Producto</a>
+      <a href="/aym/productos/" class="FiltrarCate">Todos</a> |
+      <a href="/aym/productos/?cat=ESCOLAR" class="FiltrarCate">Útiles Escolares</a> |
+      <a href="/aym/productos/?cat=ALIMENTO" class="FiltrarCate">Colaciones</a> |
+      <a href="/aym/productos/?cat=BAZAR" class="FiltrarCate">Bazar</a> |
+      <a href="{% url 'crear_prod' %}" class="FiltrarCate">Crear Producto</a>
     </nav>
     <form method="GET" class="busqueda">
     
