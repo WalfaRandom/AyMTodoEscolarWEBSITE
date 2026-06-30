@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+db.sqlite3
+media/productos/*
+!media/productos/.gitkeep
+staticfiles/
+.env
+venv/
+*.egg-info/

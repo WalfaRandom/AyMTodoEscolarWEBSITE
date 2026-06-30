@@ -1,0 +1,38 @@
+{% extends "inventario/base.html" %}
+{% block title %}{{ producto.nombre }}{% endblock %}
+{% block content %}
+<a href="{% url 'producto_list' %}">&larr; Volver</a>
+<div class="row mt-2">
+    <div class="col-md-7">
+        <h2>{{ producto.nombre }}</h2>
+        <p class="text-muted">{{ producto.categoria.nombre }}</p>
+        <p>{{ producto.descripcion }}</p>
+        <ul class="list-group mb-3">
+            <li class="list-group-item">Precio unitario: <strong>${{ producto.precio_unitario|floatformat:0 }}</strong></li>
+            <li class="list-group-item">Stock actual: <strong>{{ producto.stock }}</strong></li>
+            <li class="list-group-item">Valor total: <strong>${{ producto.valor_total|floatformat:0 }}</strong></li>
+        </ul>
+        <a href="{% url 'producto_update' producto.pk %}" class="btn btn-outline-secondary">Editar</a>
+    </div>
+    <div class="col-md-5">
+        <h5>Registrar movimiento de stock</h5>
+        <form method="post" action="{% url 'registrar_movimiento' producto.pk %}" class="card card-body shadow-sm mb-4">
+            {% csrf_token %}
+            {{ movimiento_form.as_p }}
+            <button class="btn btn-primary">Registrar</button>
+        </form>
+
+        <h5>Últimos movimientos</h5>
+        <ul class="list-group">
+            {% for m in movimientos %}
+            <li class="list-group-item d-flex justify-content-between">
+                <span>{{ m.get_tipo_display }} ({{ m.cantidad }})</span>
+                <span class="text-muted small">{{ m.fecha|date:"d/m/Y H:i" }}</span>
+            </li>
+            {% empty %}
+            <li class="list-group-item text-muted">Sin movimientos.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

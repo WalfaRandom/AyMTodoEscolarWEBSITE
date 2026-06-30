@@ -1,0 +1,13 @@
+{% extends "inventario/base.html" %}
+{% block title %}{% if object %}Editar producto{% else %}Nuevo producto{% endif %}{% endblock %}
+{% block content %}
+<h2>{% if object %}Editar producto{% else %}Nuevo producto{% endif %}</h2>
+<form method="post" enctype="multipart/form-data" class="card card-body shadow-sm">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div>
+        <button class="btn btn-primary" type="submit">Guardar</button>
+        <a href="{% url 'producto_list' %}" class="btn btn-link">Cancelar</a>
+    </div>
+</form>
+{% endblock %}

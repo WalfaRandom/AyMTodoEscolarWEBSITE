@@ -1,0 +1,25 @@
+{% extends "inventario/base.html" %}
+{% block title %}Categorías{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Categorías</h2>
+    <a href="{% url 'categoria_create' %}" class="btn btn-primary">+ Nueva categoría</a>
+</div>
+<table class="table table-striped">
+    <thead><tr><th>Nombre</th><th>Descripción</th><th></th></tr></thead>
+    <tbody>
+        {% for c in categorias %}
+        <tr>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.descripcion }}</td>
+            <td class="text-end">
+                <a href="{% url 'categoria_update' c.pk %}" class="btn btn-sm btn-outline-secondary">Editar</a>
+                <a href="{% url 'categoria_delete' c.pk %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="3" class="text-center text-muted">No hay categorías.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "inventario/base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2 class="mb-4">Dashboard</h2>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card text-bg-primary"><div class="card-body">
+            <div class="fs-3">{{ total_productos }}</div>
+            <div>Productos activos</div>
+        </div></div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-success"><div class="card-body">
+            <div class="fs-3">{{ stock_total }}</div>
+            <div>Unidades en stock</div>
+        </div></div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-info"><div class="card-body">
+            <div class="fs-3">${{ valor_inventario|floatformat:0 }}</div>
+            <div>Valor del inventario</div>
+        </div></div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-warning"><div class="card-body">
+            <div class="fs-3">{{ sin_stock|length }}</div>
+            <div>Sin stock</div>
+        </div></div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <h5>Stock bajo (≤ 3 unidades)</h5>
+        <ul class="list-group">
+            {% for p in stock_bajo %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <a href="{% url 'producto_detail' p.pk %}">{{ p.nombre }}</a>
+                    <span class="badge bg-warning text-dark">{{ p.stock }}</span>
+                </li>
+            {% empty %}
+                <li class="list-group-item text-muted">No hay productos con stock bajo.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h5>Últimos movimientos</h5>
+        <ul class="list-group">
+            {% for m in ultimos_movimientos %}
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>{{ m.get_tipo_display }} — {{ m.producto.nombre }}</span>
+                    <span class="text-muted">{{ m.cantidad }} un.</span>
+                </li>
+            {% empty %}
+                <li class="list-group-item text-muted">Aún no hay movimientos.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
