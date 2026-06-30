@@ -1,0 +1,42 @@
+{% extends "inventario/base.html" %}
+{% block title %}Productos{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Productos</h2>
+    <a href="{% url 'producto_create' %}" class="btn btn-primary">+ Nuevo producto</a>
+</div>
+
+<form method="get" class="row g-2 mb-3">
+    <div class="col-md-5">{{ form.q }}</div>
+    <div class="col-md-4">{{ form.categoria }}</div>
+    <div class="col-md-2"><button class="btn btn-outline-secondary w-100">Buscar</button></div>
+</form>
+
+<table class="table table-striped align-middle">
+    <thead>
+        <tr><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Stock</th><th></th></tr>
+    </thead>
+    <tbody>
+        {% for p in productos %}
+        <tr>
+            <td><a href="{% url 'producto_detail' p.pk %}">{{ p.nombre }}</a></td>
+            <td>{{ p.categoria.nombre }}</td>
+            <td>${{ p.precio_unitario|floatformat:0 }}</td>
+            <td>
+                {% if p.stock == 0 %}<span class="badge bg-danger">{{ p.stock }}</span>
+                {% elif p.stock_bajo %}<span class="badge bg-warning text-dark">{{ p.stock }}</span>
+                {% else %}<span class="badge bg-success">{{ p.stock }}</span>{% endif %}
+            </td>
+            <td class="text-end">
+                <a href="{% url 'producto_update' p.pk %}" class="btn btn-sm btn-outline-secondary">Editar</a>
+                {% if user.is_staff %}
+                <a href="{% url 'producto_delete' p.pk %}" class="btn btn-sm btn-outline-danger">Eliminar</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5" class="text-center text-muted">No hay productos.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

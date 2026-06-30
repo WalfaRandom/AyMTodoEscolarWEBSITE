@@ -1,0 +1,14 @@
+{% extends "inventario/base.html" %}
+{% block title %}Iniciar sesión{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-4 mt-5">
+        <h3 class="mb-3 text-center"> AyM todo escolar</h3>
+        <form method="post" class="card card-body shadow-sm">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary w-100" type="submit">Ingresar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
