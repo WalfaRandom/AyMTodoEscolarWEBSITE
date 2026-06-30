@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}organizacion {% endblock %}</title>
+    <style>
+        table,th,tr,td{
+            border: 2px solid;
+            border-collapse: collapse;            
+            padding: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>(C)Javier Calderon 2026</p>
+    </footer>
+</body>
+</html>

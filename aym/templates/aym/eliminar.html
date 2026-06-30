@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar producto</title>
+</head>
+<body>
+    
+    <h1> ¿Estas seguro que quieres el eliminar el producto "{{ producto.nombre }}" del inventario? </h1>
+    <p style="color: red; "> Esta accion no tendra vuelta atras y removera el articulo de la bodega.</p>
+
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" style="background-color: red; color: white;">Si, confirmar Eliminacion</button>
+        <a href="{% url 'lista_prods' %}">Candelar y volver</a>
+
+    </form>
+</body>
+</html>

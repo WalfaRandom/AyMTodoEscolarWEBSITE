@@ -1,0 +1,79 @@
+{% extends 'aym/base.html' %}
+
+{% block title %}Lista de Invenetario{% endblock %}
+
+
+{% block content %}
+    <h1>Inventario de AYM</h1>
+        <nav style="margin-bottom: 20px;"> 
+            <strong> Filtros:</strong>
+            <a href="/aym/productos/">Todos</a>
+            <a href="/aym/productos/?cat=ESCOLAR">Utiles Escolares</a>
+            <a href="/aym/productos/?cat=ALIMENTO">Colaciones</a>
+            <a href="/aym/productos/?cat=BAZAR">Regalos/Bazar</a>
+            <a href="{% url 'crear_prod' %}">Agregar Producto</a>
+        </nav>
+
+        <form method="GET" style="margin-bottom: 20px;">
+            {% if categoria_actual %}
+                <input type="hidden" name="cat" value="{{ categoria_actual }}">
+            {% endif %}
+            <input type="text" name="q" value="{{ busqueda_actual }}" placeholder="Buscar producto por nombre...." style="padding: 6px; width: 300px;">
+            <button type="submit" style="padding: 6px 12px;">Buscar</button>
+
+            <a href="{% url 'lista_prod' %}" style="margin-left: 10px; color: gray; text-decoration: none;">Limpiar filtros</a>
+            
+        </form>
+
+        <div style="margin-bottom: 20px; font-size: 14px;">
+            <strong>Ordenar por:</strong>
+            <a href="?order=nombre_az{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (A-Z)</a> |
+            <a href="?order=nombre_za{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Nombre (Z-A)</a> |
+            <a href="?order=precio_asc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Menor a Mayor</a> |
+            <a href="?order=precio_desc{% if busqueda_actual %}&q={{ busqueda_actual }}{% endif %}{% if categoria_actual %}&cat={{ categoria_actual }}{% endif %}">Precio: Mayor a Menor</a> |
+
+
+        </div>
+                
+    <p> Lista de productos disponibles</p>
+        <table>
+            <tr>
+                <th>nombre</th>
+                <th>precio</th>
+                <th>stock</th>
+                <th>descripcion</th>
+                <th>categoria</th>
+            </tr>
+            {% for prod in lista %}
+            <tr>
+                <td>{{ prod.nombre}}</td>
+                
+                <td> {% if prod.precio > 0 %} ${{ prod.precio }} {% else %} no hay preciodisponible {% endif %} </td>
+                <td> {% if prod.stock <= 5 %}
+                    <p style="color: red; font-weight: bold; padding: 0;margin: 0;">
+                        {{ prod.stock }} (¡Stock Bajo!)</p>
+                    {% else %} {{ prod.stock }} {% endif %}
+                </td>
+                <td>{{ prod.descripcion }}</td>
+                <td>{{ prod.get_categoria_display }}</td>
+                <td>
+                    <button>
+                        <a href="{% url 'editar_prod' prod.id %}">Editar</a>
+                    </button>
+                </td>
+                <td>
+                    <button>
+                        <a href="{% url 'eliminar_prod' prod.id %}">Eliminar</a>
+                    </button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7" style="text-align: center; color: red; padding: 10px;">
+                    <strong> No hay productos registrados en el inventario.</strong>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+{% endblock %}

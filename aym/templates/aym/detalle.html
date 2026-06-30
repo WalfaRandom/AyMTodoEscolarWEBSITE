@@ -1,0 +1,18 @@
+{% extends 'aym/base.html' %}
+
+
+{% block title %} {{ Tienda_Inventarios.Nombre }}{% endblock %}
+
+{% block content %}
+    <h4>{{ Tienda_Inventarios.Nombre }}</h4>
+    
+
+    <p><strong>Nombre_del_Producto:</strong> {{ Tienda_Inventarios.Nombre }}</p>
+    <p><strong>Categoria:</strong> {{ Tienda_Inventarios.Categoria }}</p>
+    <p><strong>Precio:</strong> {{ Tienda_Inventarios.Precio }}</p>
+    <p><strong>Stock:</strong> {{ Tienda_Inventarios.Stock }}</p>
+    <p><strong> Detalle_del_Producto: </strong> {{ Tienda_Inventarios.Nota }} </p>
+    <a href="{% url 'index' %}">c--- volver a la lista</a>
+
+    
+{% endblock %}
