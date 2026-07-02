@@ -24,6 +24,24 @@ td {
 /* .navigation button:active{
     box-shadow: 3px 3px rgb(0, 0, 0);
 } */
+ .btn-crear {
+    background-color: #ffd700; /* Dorado brillante del logo */
+    color: #0d253f; /* Texto azul marino para contraste */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: 2px solid #0d253f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-crear:hover {
+    background-color: #e5c100; /* Dorado más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
 
 .input-search{
     width: 300px;

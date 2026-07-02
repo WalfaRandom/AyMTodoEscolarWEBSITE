@@ -30,6 +30,11 @@
     - [9.3 Editar productos](#93-editar-productos)
     - [9.4 Eliminar productos](#94-eliminar-productos)
   - [10. Filtrado de productos](#10-filtrado-de-productos)
+  - [Creación de login](#creación-de-login)
+    - [Paso 1](#paso-1)
+    - [Paso 2](#paso-2)
+    - [Paso 3](#paso-3)
+  - [Paso 4](#paso-4)
 
 
 ---
@@ -883,4 +888,96 @@ Gracias a este diseño de código, si el usuario busca **Acuarela**, selecciona 
 `href="?order=precio_asc&q=Acuarela&cat=ESCOLAR"`
 
 Al hacer clic, la URL le envía los tres datos al mismo tiempo a la vista **listar_productos**. El "Motor" recibe el paquete completo y es capaz de usar los datos en los tres filtros: por texto, por categoría y ordena el resultado sin perder ninguna instrucción en el camino.
+
+## Creación de login
+```
+Recuerden que para crear el login vamos a trabajar directamente con Django, esto debido a que Django nos facilita muchos procesos que ya los trae integrados.
+```
+### Paso 1
+Comenzamos protegiendo nuestras vistas que pueden modificar datos **(crear, editar y eliminar)**, vamos a agregar en `views.py`:
+```python
+# IMPORTANTE: Es obligatorio importar el decorador 'login_required'
+from django.contrib.auth.decorators import login_required # <-- IMPORTACIÓN NECESARIA
+from django.shortcuts import render, redirect, get_object_or_404
+# ... tus otros imports ...
+
+# Esta la dejamos PÚBLICA para que lean productos:
+def listar_productos(request):
+    # ... tu código actual ...
+    return render(request, 'aym/lista.html', contexto)
+
+# A ESTAS TRES LES PONEMOS EL CANDADO:
+@login_required
+def crear_producto(request):
+    # ... tu código actual ...
+    return render(request, 'aym/crear.html')
+
+@login_required
+def editar_producto(request, id):
+    # ... tu código actual ...
+    return render(request, 'aym/editar.html')
+
+@login_required
+def eliminar_producto(request, id):
+    # ... tu código actual ...
+    return render(request, 'aym/eliminar.html')
+```
+
+### Paso 2
+Vamos a confirgurar las URL de autenticación `aym/urls.py`:
+```python
+from django.urls import path
+from aym import views
+#IMPORTACIÓN NECESARIA
+from django.contrib.auth import views as auth_views 
+
+urlpatterns = [   
+    #Acá agregué el nombre dashboard, el cual es donde mostrará nuestro index 
+    path('dashboard', views.listar_productos, name='lista_prods'),
+    path('nuevo/', views.crear_producto, name='crear_prod'),
+    path('editar/<int:id>/', views.editar_producto, name='editar_prod'),
+    path('eliminar/<int:id>/', views.eliminar_producto, name='eliminar_prod'),
+    
+    #Acá dejé este como principal, ya que va a ser nuestra página de login, para que sea lo primero que cargue. Además, dejamos como vista login.html que crearemos en el siguiente paso
+    path('', auth_views.LoginView.as_view(template_name='aym/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='lista_prods'), name='logout'),
+]
+```
+### Paso 3
+Ahora vamos a crear nuestro formulario de login, `login.html` en nuestra carpeta de plantillas `aym/templates/aym`. Este es un ejemplo muy básico del formulario:
+```html
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión - Bazar AyM</title>
+    <link rel="stylesheet" href="{% static 'aym/css/styles.css' %}">
+</head>
+<body>
+    <div style="max-width: 400px; margin: 100px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h2>Acceso Administrativo</h2>
+        <p>Inicia sesión para gestionar el inventario del Bazar.</p>
+        
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }} 
+            
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Ingresar al Sistema
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+```
+
+## Paso 4
+Vamos a modificar nuestro `settings.py`, esto para decirle a Django donde es que debe hacer las redirecciones. Nos diremos al final de nuestro archivo y pegaremos lo siguiente:
+```bash
+# Configuraciones de redirección de sesiones
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'lista_prods'
+```
+Luego de esto vamos a crear un superusuario para poder acceder a nuestra plataforma y estaría listo por el momento.
 

@@ -5,18 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AyM Todo Escolar - Inventario</title>
+    <link rel="icon" href="{% static 'aym/logo.png' %} type="image/x-icon" />
+
     <link rel="stylesheet" href="{% static 'aym/styles.css' %}" />
     <link rel="stylesheet" href="{% static 'aym/base.css' %}" />
   </head>
   <body>
     <header>
-        <h1 class="main-title">AyM Todo Escolar</h1> 
+      <h1 class="main-title">AyM Todo Escolar</h1>
       <img
         src="{% static 'aym/logo.png' %}"
         alt="logo"
         width="200px"
         height="200px"
-      />      
+      />
     </header>
     <main>{% block content %} {% endblock %}</main>
     <footer>

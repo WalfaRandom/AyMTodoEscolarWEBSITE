@@ -120,3 +120,7 @@ STATIC_URL = 'static/'
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
+
+# Configuraciones de redirección de sesiones
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'lista_prods'

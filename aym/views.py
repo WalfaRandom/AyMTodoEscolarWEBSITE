@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required 
 from django.shortcuts import render, redirect
 from .models import Producto
 from .forms import ProductoForm # Importamos tu nuevo formulario
@@ -53,8 +54,8 @@ def listar_productos(request):
         'categoria_actual': categoria,
         'orden_actual': ordenar_por
     }
-    return render(request, 'aym/dashboard.html', contexto)
-
+    return render(request, 'aym/index.html', contexto)
+@login_required
 def crear_producto(request):
     # al presionar enviar
     if request.method == 'POST':
@@ -73,7 +74,7 @@ def crear_producto(request):
         'form': formulario
     }
     return render(request, 'aym/crear.html', contexto)
-
+@login_required
 def editar_producto(request, id):
     producto = Producto.objects.get(id=id)
     #POST
@@ -91,7 +92,7 @@ def editar_producto(request, id):
         'producto': producto # Opcional: nos sirve si queremos mostrar el nombre original en el HTML
     }
     return render(request, 'aym/editar.html', contexto)
-
+@login_required
 def eliminar_producto(request, id):
     producto = Producto.objects.get(id=id)
     
@@ -102,5 +103,3 @@ def eliminar_producto(request, id):
         
     return render(request, 'aym/eliminar.html', {'producto': producto})
 
-def dash(request):    
-    return render(request, 'aym/dashboard.html')
